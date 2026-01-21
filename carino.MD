@@ -55,28 +55,29 @@ Replace hero memories with level 40 epics
 Farm i86 weapon and craft 4-6 T1 mods
 - 1 mod slates
 - False God's Skin
-- 6x T1 Gear
+- 6x T1 Weapon
 
 Deal enough damage? - Speed Phantom + Magic Dash + Cooldown Reduction + Mass Effect
 Need damage? - Burst of Anger - Well-Fought Battle
 
 
 #### Pushing to 200b DP5S for Profound
-1. Better false god's idol is ~55%
+1. ~20 FE Better false god's idol is ~55%
 
-2. ~225 FE get proj speed hero memories with other mods
+2. [5x DP5S] ~225 FE get proj speed hero memories with other mods
     - Makes blind helmet useful
     - 5x damage multi for 3 decent ones at level 40
 
-3. ~600 FE glove for 2x damage
+3. [2x DP5S] ~600 FE Death's Touch for 2x damage
     - Corrupt for a 30% chance at even more damage
-    - 2x damage multi, more if you land the corrupt
 
-3. Buy a Dawn breaker & blend it for +1 attack skill
+3. [1.5x DP5S] Buy a Dawn breaker & blend it for +1 attack skill
 
+4. ~800 FE Heart of the Storm, is ~30% upgrade from the gods (maybe more depending on multis)
 
-4. ~800 FE amulet, is ~30% upgrade from the gods (maybe more depending on multis)
-
+5. [1x-3x DP5S] ~1000 FE Trinity chest
+    - This chestpiece requires you to balance Lightning/Cold/Fire res
+    - DPS is significant worse if you neglect this
 
 6. ~150 fe attempt at corrupt helmet for a 30% chance at 1/2 of +30% something? 
 
