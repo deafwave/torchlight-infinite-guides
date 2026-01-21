@@ -81,13 +81,22 @@ Need damage? - Burst of Anger - Well-Fought Battle
 5. Ethereal Prism: Sweeping Fury
     - Get a Res affix on this to assist with the Trinity damage
 
-6. ~800 FE Heart of the Storm, is ~30% upgrade from the gods (maybe more depending on multis)
+6. Cheap 2-mod slates
 
-7. ~150 fe attempt at corrupt helmet for a 30% chance at 1/2 of +30% something? 
+7. ~800 FE Heart of the Storm, is ~30% upgrade from the gods (maybe more depending on multis)
 
-8. ~800 FE make a priceless ring?
+8. ~150 fe attempt at corrupt helmet for a 30% chance at 1/2 of +30% something? 
 
 9. ~1000 FE make a real priceless weapon
+
+10. ~800 FE make a priceless ring?
+
+Buffs we are trying to maintain:
+1. Fervor
+2. Agility Blessing
+3. Feline Stimulant (Kitty Express)
+4. Heat Up (attack faster)
+5. 
 
 ### Traveler 8 @ 10b DP5S (30b preferred)
 
