@@ -70,6 +70,7 @@ Need damage? - Burst of Anger - Well-Fought Battle
 
 3. ~600 FE glove for 2x damage
     - Corrupt for a 30% chance at even more damage
+    - 2x damage multi, more if you land the corrupt
 
 3. Buy a Dawn breaker & blend it for +1 attack skill
 
