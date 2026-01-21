@@ -73,17 +73,21 @@ Need damage? - Burst of Anger - Well-Fought Battle
 
 3. [1.5x DP5S] Buy a Dawn breaker & blend it for +1 attack skill
 
-4. ~800 FE Heart of the Storm, is ~30% upgrade from the gods (maybe more depending on multis)
-
-5. [1x-3x DP5S] ~1000 FE Trinity chest
+4. [1x-3x DP5S] ~1000 FE `Trinity` chest
     - This chestpiece requires you to balance Lightning/Cold/Fire res
     - DPS is significant worse if you neglect this
+    - Equip `Precise:Elemental Resistance` if needed to fix res
 
-6. ~150 fe attempt at corrupt helmet for a 30% chance at 1/2 of +30% something? 
+5. Ethereal Prism: Sweeping Fury
+    - Get a Res affix on this to assist with the Trinity damage
 
-7. ~800 FE make a priceless ring?
+6. ~800 FE Heart of the Storm, is ~30% upgrade from the gods (maybe more depending on multis)
 
-8. ~1000 FE make a real priceless weapon
+7. ~150 fe attempt at corrupt helmet for a 30% chance at 1/2 of +30% something? 
+
+8. ~800 FE make a priceless ring?
+
+9. ~1000 FE make a real priceless weapon
 
 ### Traveler 8 @ 10b DP5S (30b preferred)
 
