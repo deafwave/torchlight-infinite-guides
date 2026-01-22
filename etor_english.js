@@ -1,157 +1,124 @@
-// Chinese to English translation dictionary - UI elements
-const translations = {
-  // Map stats
-  '本图': 'This Map',
-  '次数': 'Runs',
-  '均耗时': 'Avg Time',
-  '每': 'Per',
-  '未记录': 'Offline',
-  '用时': 'Duration',
-  '物价波动': 'Price Fluctuation',
-  '小时': 'Hour',
-  '每日': 'Daily',
-  '刷New': 'Refresh',
-  '当前均价': 'Avg Price',
-  '涨跌幅': 'Change',
-  '最High价': 'Highest',
-  '最Low价': 'Lowest',
-  '被动技能': 'Passive Skills',
-  '辅助技能': 'Support Skills',
-  '主动技能': 'Active Skills',
-
-  // App name
-  '易火': 'ETor',
-  
-  // Navigation
-  '总览': 'Overview',
-  '物品': 'Items',
-  '价格库': 'Price Database',
-  '历史记录': 'History',
-  '策略分析': 'Strategy Analysis',
-  '排行榜': 'Leaderboard',
-  '小窗模式': 'Mini Window',
-  
-  // Status
-  '正在记录': 'Active',
-  '记录中': 'Recording',
-  '等待进入': 'Waiting',
-  
-  // Stats cards
-  '背包价值': 'Inventory Value',
-  '总收益(扣税)': 'Total Profit (After Tax)',
-  '总收益': 'Total Profit',
-  '扣税': 'After Tax',
-  '每分钟收益': 'Profit/Min',
-  '火/分钟': '🔥/min',
-  '实际': 'Actual',
-  
-  // Time section
-  '图内时长': 'In-Map Time',
-  '实际时长': 'Actual Time',
-  '地图次数': 'Map Runs',
-  '地图内时长累加': 'Total time spent in maps',
-  '从进第一张图到最后出图之间总时长': 'Total time from first map entry to last exit',
-  
-  // Map log
-  '地图日志': 'Map Log',
-  '地图记录': 'Map Records',
-  '地图 / 时间': 'Map / Time',
-  '拾取': 'Loot',
-  '成本': 'Cost',
-  '收益': 'Profit',
-  '效率': 'Efficiency',
-  '时长': 'Duration',
-  '暂无记录': 'No records yet',
-  '暂无拾取记录': 'No loot records',
-  '跟随地图': 'Follow Map',
-  
-  // Actions
-  '重置': 'Reset',
-  '清除数据': 'Clear Data',
-  '切换显示': 'Toggle Display',
-  '最小化': 'Minimize',
-  '最大化': 'Maximize',
-  '关闭': 'Close',
-  '点击': 'Click',
-  '清空': 'Clear',
-  
-  // Items page - Tabs
-  '背包': 'Backpack',
-  '仓库': 'Storage',
-  'Loot历史': 'Loot History',
-  
-  // Items page - Filters
-  '主类型': 'Main Type',
-  '子类型': 'Sub Type',
-  '全部': 'All',
-  '技能': 'Skills',
-  '渴饮症': 'Vorax',
-  '其他': 'Other',
-  '通货': 'Currency',
-  '请选择主类型': 'Select main type',
-  '价格过滤': 'Price Filter',
-  '未设置': 'Not set',
-  '搜索物品': 'Search items',
-  
-  // Items page - Labels
-  '总价值': 'Total Value',
-  '单价': 'Unit Price',
-  '件物品': 'Items',
-  '件': ' pcs',
-  '条': ' entries',
-  
-  // Pagination
-  '上一页': 'Previous',
-  '下一页': 'Next',
-  '分页': 'Pagination',
-  
-  // Price Database page
-  '装备': 'Equipment',
-  '列表': 'List',
-  '查看波动图': 'View price chart',
-  '价格高': 'Price High',
-  '价格低': 'Price Low',
-  '高': 'High',
-  '低': 'Low',
-  '更新时间': 'Updated',
-  '新': 'New',
-  '旧': 'Old',
-  
-  // Item categories
-  '传奇装备': 'Legendary Equipment',
-  '通用道具': 'General Items',
-  '装备蓝图': 'Equipment Blueprint',
-  '蓝图': 'Blueprint',
-  '辅助': 'Support',
-  '触媒': 'Catalyst',
-  '精密': 'Precision',
-  '极武': 'Ultimate',
-  
-  // History page
-  '角色': 'Character',
-  '选择角色': 'Select Character',
-  '轮次模式': 'Round Mode',
-  '仅最新版本': 'Latest only',
-  '轮次': 'Round',
-  '已选': 'Selected',
-  '天': ' days',
-  '轮': ' rounds',
-  '日期选择': 'Date Selection',
-  '今日': 'Today',
-  '近': 'Recent',
-  '暂无历史日期': 'No history dates',
-  '暂无': 'None',
-  '总': 'Total',
-  '平均': 'Average',
-  '分钟': 'min',
-  '火': '🔥',
-  
-  // Misc
-  '注：传奇均为未鉴定价格': 'Note: Legendary items priced as unidentified',
-  '赛季': 'Season',
+const uiTranslations = {
+    "从进第一张图到最后出图之间总时长": "Total time from first map entry to last exit",
+    "注：传奇均为未鉴定价格": "Note: Legendary items priced as unidentified",
+    "总收益(扣税)": "Total Profit (After Tax)",
+    "地图内时长累加": "Total time spent in maps",
+    "地图 / 时间": "Map / Time",
+    "最High价": "Highest",
+    "暂无拾取记录": "No loot records",
+    "Loot历史": "Loot History",
+    "请选择主类型": "Select main type",
+    "暂无历史日期": "No history dates",
+    "最Low价": "Lowest",
+    "每分钟收益": "Profit/Min",
+    "查看波动图": "View price chart",
+    "仅最新版本": "Latest only",
+    "物价波动": "Price Fluctuation",
+    "刷New": "Refresh",
+    "当前均价": "Avg Price",
+    "被动技能": "Passive Skills",
+    "辅助技能": "Support Skills",
+    "主动技能": "Active Skills",
+    "历史记录": "History",
+    "策略分析": "Strategy Analysis",
+    "小窗模式": "Mini Window",
+    "正在记录": "Active",
+    "等待进入": "Waiting",
+    "背包价值": "Inventory Value",
+    "火/分钟": "🔥/min",
+    "图内时长": "In-Map Time",
+    "实际时长": "Actual Time",
+    "地图次数": "Map Runs",
+    "地图日志": "Map Log",
+    "地图记录": "Map Records",
+    "暂无记录": "No records yet",
+    "跟随地图": "Follow Map",
+    "清除数据": "Clear Data",
+    "切换显示": "Toggle Display",
+    "价格过滤": "Price Filter",
+    "搜索物品": "Search items",
+    "更新时间": "Updated",
+    "传奇装备": "Legendary Equipment",
+    "通用道具": "General Items",
+    "装备蓝图": "Equipment Blueprint",
+    "选择角色": "Select Character",
+    "轮次模式": "Round Mode",
+    "日期选择": "Date Selection",
+    "均耗时": "Avg Time",
+    "未记录": "Offline",
+    "涨跌幅": "Change",
+    "价格库": "Price Database",
+    "排行榜": "Leaderboard",
+    "记录中": "Recording",
+    "总收益": "Total Profit",
+    "最小化": "Minimize",
+    "最大化": "Maximize",
+    "主类型": "Main Type",
+    "子类型": "Sub Type",
+    "渴饮症": "Vorax",
+    "未设置": "Not set",
+    "总价值": "Total Value",
+    "件物品": "Items",
+    "上一页": "Previous",
+    "下一页": "Next",
+    "价格高": "Price High",
+    "价格低": "Price Low",
+    "本图": "This Map",
+    "次数": "Runs",
+    "用时": "Duration",
+    "小时": "Hour",
+    "每日": "Daily",
+    "易火": "ETor",
+    "总览": "Overview",
+    "物品": "Items",
+    "扣税": "After Tax",
+    "实际": "Actual",
+    "拾取": "Loot",
+    "成本": "Cost",
+    "收益": "Profit",
+    "效率": "Efficiency",
+    "时长": "Duration",
+    "重置": "Reset",
+    "关闭": "Close",
+    "点击": "Click",
+    "清空": "Clear",
+    "背包": "Backpack",
+    "仓库": "Storage",
+    "全部": "All",
+    "技能": "Skills",
+    "其他": "Other",
+    "通货": "Currency",
+    "单价": "Unit Price",
+    "分页": "Pagination",
+    "装备": "Equipment",
+    "列表": "List",
+    "蓝图": "Blueprint",
+    "辅助": "Support",
+    "触媒": "Catalyst",
+    "精密": "Precision",
+    "极武": "Ultimate",
+    "角色": "Character",
+    "轮次": "Round",
+    "已选": "Selected",
+    "今日": "Today",
+    "暂无": "None",
+    "平均": "Average",
+    "分钟": "min",
+    "赛季": "Season",
+    "每": "Per",
+    "件": " pcs",
+    "条": " entries",
+    "高": "High",
+    "低": "Low",
+    "新": "New",
+    "旧": "Old",
+    "天": " days",
+    "轮": " rounds",
+    "近": "Recent",
+    "总": "Total",
+    "火": "🔥"
 };
 
-// Item names - separate for easy maintenance
 const itemNames = {
   "元素异常": "Elemental Ailment",
   "周围": "Nearby",
@@ -4316,29 +4283,9 @@ const itemNames = {
   "幽夜暗域的碎星（时刻 8）": "Voidlands Starshard (Timemark 8)"
 };
 
-// Script comments (can be ignored, but adding for completeness)
-const ignoreList = [
-  '禁用浏览器缩放功能',
-  '滚轮',
-  '和',
-  '中键点击',
-  '禁用',
-  '滚轮缩放',
-  '禁用中键点击',
-  '禁用中键点击的辅助方法',
-  '防止某些浏览器的事冒泡',
-  '禁用键盘缩放快捷键',
-  '触摸板缩放手势禁用',
-];
-
-// Merge translations for processing
-function getAllTranslations() {
-  return { ...itemNames, ...translations };
-}
-
 function translateText(text) {
   let result = text;
-  const allTranslations = getAllTranslations();
+  const allTranslations = { ...itemNames, ...uiTranslations };
   // Sort by length descending to match longer phrases first
   const sortedEntries = Object.entries(allTranslations).sort((a, b) => b[0].length - a[0].length);
   for (const [chinese, english] of sortedEntries) {
@@ -4416,21 +4363,3 @@ observer.observe(document.body, {
   subtree: true,
   characterData: true
 });
-
-// function findUntranslated() {
-//   const chineseRegex = /[\u4e00-\u9fff]+/g;
-//   const found = new Set();
-//   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-//   while (walker.nextNode()) {
-//     const matches = walker.currentNode.textContent.match(chineseRegex);
-//     if (matches) matches.forEach(m => {
-//       if (!ignoreList.includes(m)) {
-//         found.add(m);
-//       }
-//     });
-//   }
-//   console.log('Untranslated Chinese:', [...found]);
-//   return [...found];
-// }
-
-// console.log('💡 Run findUntranslated() to find missing translations');
