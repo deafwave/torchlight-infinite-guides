@@ -29,6 +29,7 @@
 ## When a Plane Anchor unlocks
 
 ## When the Cube gameplay unlocks
+- Legendary Cube Pet
 
 ## When entering the Ruins of Aeterna
 
