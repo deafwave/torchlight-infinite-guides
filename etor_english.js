@@ -18,6 +18,10 @@ const translations = {
   '被动Skills': 'Passive Skills',
   '主动Skills': 'Active Skills',
 
+  '被动技能': 'Passive Skills',
+  '辅助技能': 'Support Skills',
+  '主动技能': 'Active Skills',
+
   // App name
   '易火': 'ETor',
   
@@ -95,7 +99,7 @@ const translations = {
   // Items page - Labels
   '总价值': 'Total Value',
   '单价': 'Unit Price',
-  '件Items': 'Items',
+  '件物品': 'Items',
   '件': ' pcs',
   '条': ' entries',
   
