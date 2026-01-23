@@ -28,7 +28,7 @@ This method requires you to have the original ETOR application.
 4. Close the console.
 
 <details>
-<summary>**Click to see Before & After screenshots**</summary>
+<summary><b>Click to see Before & After screenshots</b></summary>
 
 ### Before
 ![alt text](./docs/before.png)
