@@ -1,67 +1,74 @@
-import { databaseData } from "./translations.js";
-import { uiTranslations } from "./ui-translations.js";
+import { enData, koData, jaData, ruData } from "./translations.js";
+import { uiTranslationsMap } from "./ui-translations.js";
+
+declare const TARGET_LANG: 'en' | 'ko' | 'ja' | 'ru';
+
+const langDataMap = { en: enData, ko: koData, ja: jaData, ru: ruData };
+const databaseData = langDataMap[TARGET_LANG];
+const uiTranslations = uiTranslationsMap[TARGET_LANG];
+
 const allTranslations = { ...databaseData, ...uiTranslations };
 const sortedTranslations = Object.entries(allTranslations)
   .sort((a, b) => b[0].length - a[0].length)
-  .map(([chinese, english]) => ({
+  .map(([chinese, translated]) => ({
     pattern: new RegExp(chinese.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'),
-    english
+    translated
   }));
 
-function translateText(text) {
+function translateText(text: string): string {
   let result = text;
-  for (const { pattern, english } of sortedTranslations) {
-    result = result.replace(pattern, english);
+  for (const { pattern, translated } of sortedTranslations) {
+    result = result.replace(pattern, translated);
   }
   return result;
 }
 
-function translateElement(element) {
+function translateElement(element: Element): void {
   const walker = document.createTreeWalker(
     element,
     NodeFilter.SHOW_TEXT,
-    null,
-    false
+    null
   );
 
-  let node;
+  let node: Node | null;
   while ((node = walker.nextNode())) {
     const original = node.textContent;
-    const translated = translateText(original);
-    if (original !== translated) {
-      node.textContent = translated;
+    if (original) {
+      const translated = translateText(original);
+      if (original !== translated) {
+        node.textContent = translated;
+      }
     }
   }
 
   element.querySelectorAll('[title]').forEach(el => {
-    const original = el.title;
+    const original = (el as HTMLElement).title;
     const translated = translateText(original);
     if (original !== translated) {
-      el.title = translated;
+      (el as HTMLElement).title = translated;
     }
   });
 
   element.querySelectorAll('[placeholder]').forEach(el => {
-    const original = el.placeholder;
+    const original = (el as HTMLInputElement).placeholder;
     const translated = translateText(original);
     if (original !== translated) {
-      el.placeholder = translated;
+      (el as HTMLInputElement).placeholder = translated;
     }
   });
 }
 
-// Debounced translation queue
-let pendingNodes = new Set();
-let rafId = null;
+let pendingNodes = new Set<Node>();
+let rafId: number | null = null;
 
-function queueTranslation(node) {
+function queueTranslation(node: Node): void {
   pendingNodes.add(node);
   if (!rafId) {
     rafId = requestAnimationFrame(processPendingTranslations);
   }
 }
 
-function processPendingTranslations() {
+function processPendingTranslations(): void {
   rafId = null;
   const nodes = pendingNodes;
   pendingNodes = new Set();
@@ -70,12 +77,14 @@ function processPendingTranslations() {
     if (!document.contains(node)) continue;
 
     if (node.nodeType === Node.ELEMENT_NODE) {
-      translateElement(node);
+      translateElement(node as Element);
     } else if (node.nodeType === Node.TEXT_NODE) {
       const original = node.textContent;
-      const translated = translateText(original);
-      if (original !== translated) {
-        node.textContent = translated;
+      if (original) {
+        const translated = translateText(original);
+        if (original !== translated) {
+          node.textContent = translated;
+        }
       }
     }
   }

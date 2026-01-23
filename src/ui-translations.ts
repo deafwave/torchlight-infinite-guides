@@ -1,4 +1,6 @@
-export const uiTranslations = {
+const enTranslations: Record<string, string> = {
+    "易火 ETor": "易火 ETor (ChandlerFerry)",
+    "易火-ETor": "易火-ETor (ChandlerFerry)",
     "日志未打开或背包未整理": "Failed to load item data",
     "请整理背包或小退重选人物才能正常记录物品数据": "Please organize your backpack or reselect a character in order to fix recording item data.",
     // "猫1": "E1",
@@ -142,7 +144,7 @@ export const uiTranslations = {
     "英雄": "Hero",
     "深空": "Deep Space",
     "确认操作": "Confirm Action (Deletion?)",
-    "确定继续吗？"  : "Are you sure to continue?",
+    "确定继续吗？": "Are you sure to continue?",
     "取消": "Cancel",
     "确认": "Confirm",
     "暂无数据": "No Data",
@@ -163,4 +165,24 @@ export const uiTranslations = {
     "总": "Total",
     "火": "🔥",
     "时": "Hour"
+};
+
+const koTranslations: Record<string, string> = {
+    // TODO
+};
+
+const jaTranslations: Record<string, string> = {
+    // TODO
+};
+
+const ruTranslations: Record<string, string> = {
+    // TODO
+};
+
+/** English Fallback */
+export const uiTranslationsMap = {
+    en: enTranslations,
+    ko: { ...enTranslations, ...koTranslations },
+    ja: { ...enTranslations, ...jaTranslations },
+    ru: { ...enTranslations, ...ruTranslations }
 };

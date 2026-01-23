@@ -1,21 +1,32 @@
 import { execSync } from 'child_process';
-import { existsSync, mkdirSync, readFileSync, writeFileSync, rmSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync, rmSync, copyFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import sevenZip from '7zip-min';
+import { transform } from 'esbuild';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const rootDir = join(__dirname, '../..');
 const buildDir = join(rootDir, 'build');
 const extractDir = join(buildDir, 'extracted');
-const etorDir = join(extractDir, 'etor'); // The archive contains an 'etor' folder at root
+const etorDir = join(extractDir, 'etor');
 const resourcesDir = join(etorDir, 'resources');
 const appDir = join(resourcesDir, 'app');
 const asarPath = join(resourcesDir, 'app.asar');
 
 const DOWNLOAD_URL = 'https://drive.usercontent.google.com/u/0/uc?id=1M8LGVXfD8DuQRS8prOuA9iDw3n2amVOZ&export=download';
 const ARCHIVE_NAME = 'etor.7z';
+
+const LANGUAGES = ['en', 'ko', 'ja', 'ru'] as const;
+type Language = typeof LANGUAGES[number];
+
+const LANG_NAMES: Record<Language, string> = {
+  en: 'english',
+  ko: 'korean',
+  ja: 'japanese',
+  ru: 'russian',
+};
 
 function run(cmd: string, cwd?: string) {
   console.log(`> ${cmd}`);
@@ -26,10 +37,6 @@ function cleanup() {
   if (existsSync(extractDir)) {
     console.log('Cleaning up extracted directory...');
     rmSync(extractDir, { recursive: true });
-  }
-  const zipPath = join(buildDir, 'etor-english.zip');
-  if (existsSync(zipPath)) {
-    rmSync(zipPath);
   }
 }
 
@@ -62,22 +69,28 @@ function extractAsar() {
   run(`npx @electron/asar extract "${asarPath}" "${appDir}"`, rootDir);
 }
 
-function injectScript() {
+async function injectScript(lang: Language) {
+  const langName = LANG_NAMES[lang];
   const preloadPath = join(appDir, 'build', 'obf-app', 'preload.js');
-  const translationScriptPath = join(rootDir, 'etor-english-script.js');
+  const translationScriptPath = join(rootDir, `etor-${langName}-script.js`);
 
   if (!existsSync(preloadPath)) {
     throw new Error(`preload.js not found at ${preloadPath}`);
   }
 
   if (!existsSync(translationScriptPath)) {
-    throw new Error(`etor-english-script.js not found. Run 'npm run pull' first.`);
+    throw new Error(`etor-${langName}-script.js not found. Run 'npm run pull' first.`);
   }
 
-  console.log('Reading translation script...');
+  console.log(`Reading ${langName} translation script...`);
   const translationScript = readFileSync(translationScriptPath, 'utf-8');
 
-  // Inline the script content directly (fs not available in sandboxed preload)
+  console.log('Minifying script...');
+  const minified = await transform(translationScript, {
+    minify: true,
+    loader: 'js',
+  });
+
   const injection = `
 (function() {
   let injected = false;
@@ -87,7 +100,7 @@ function injectScript() {
       injected = true;
       clearInterval(tryInject);
       const s = document.createElement('script');
-      s.textContent = ${JSON.stringify(translationScript)};
+      s.textContent = ${JSON.stringify(minified.code)};
       document.head.appendChild(s);
     }
   }, 100);
@@ -109,9 +122,15 @@ function repackAsar() {
   rmSync(appDir, { recursive: true });
 }
 
-async function createZip(): Promise<string> {
-  const zipPath = join(buildDir, 'etor-english.zip');
-  console.log('Creating final zip archive...');
+async function createZip(lang: Language): Promise<string> {
+  const langName = LANG_NAMES[lang];
+  const zipPath = join(buildDir, `etor-${langName}.zip`);
+
+  if (existsSync(zipPath)) {
+    rmSync(zipPath);
+  }
+
+  console.log(`Creating ${langName} zip archive...`);
   return new Promise((resolve, reject) => {
     sevenZip.pack(etorDir, zipPath, (err: Error | null) => {
       if (err) reject(err);
@@ -120,21 +139,34 @@ async function createZip(): Promise<string> {
   });
 }
 
-async function main() {
-  console.log('=== ETOR English Release Build ===\n');
+async function buildLanguage(lang: Language, archivePath: string): Promise<string> {
+  const langName = LANG_NAMES[lang];
+  console.log(`\n--- Building ${langName} release ---\n`);
 
   cleanup();
-  setupBuildDir();
-
-  const archivePath = downloadArchive();
   await extractArchive(archivePath);
   extractAsar();
-  injectScript();
+  await injectScript(lang);
   repackAsar();
-  const zipPath = await createZip();
+  return await createZip(lang);
+}
 
-  console.log('\n=== Build Complete ===');
-  console.log(`Output: ${zipPath}`);
+async function main() {
+  setupBuildDir();
+  const archivePath = downloadArchive();
+
+  const outputs: string[] = [];
+
+  for (const lang of LANGUAGES) {
+    const zipPath = await buildLanguage(lang, archivePath);
+    outputs.push(zipPath);
+  }
+
+  cleanup();
+
+  for (const output of outputs) {
+    console.log(`  ${output}`);
+  }
 }
 
 main().catch(err => {
