@@ -5,6 +5,45 @@
 // }
 
 const enTranslations: Record<string, string> = {
+    "缝线": "Suture",
+    "核心器官-戒指": "Legendary Ring",
+    "核心器官-手套": "Legendary Gloves",
+    "核心器官-头部": "Legendary Helm",
+    "核心器官-项链": "Legendary Ammy",
+    "核心器官-鞋子": "Legendary Boots",
+    "核心器官-胸甲": "Legendary Chest",
+    "核心器官-腰带": "Legendary Belt",
+    "渴瘾残肢": "Amputated Limb",
+    "普通器官": "Common Organ",
+    "特殊器官-其它": "Flawless Organ",
+    "完美肝脏-转伤": "Flawless Liver",
+    "完美喉舌-祝福": "Flawless Tongue",
+    "完美胚胎-召唤": "Flawless Embryo",
+    "完美皮肤-防御": "Flawless Skin",
+    "完美心脏-增益": "Flawless Heart",
+    "完美眼球-减益": "Flawless Eye",
+    "完美羽翼-持续": "Flawless Wing",
+    "知识之神": "Goddess of Knowledge",
+    "原初之核": "Traveler Entry",
+    "高塔筹码": "TOWER Token",
+    "棱镜水平仪": "Prism Leveler",
+    "梦语": "Shallow Dream",
+    "迷城残响": "Aeterna Reverb",
+    "命运相关": "Kismet Mats",
+    "侵蚀材料": "Corrosion Mats",
+    "神格契约": "Divinity Pact",
+    "升华之楔": "Transcendence Wedge",
+    "香料": "Herbs",
+    "元件": "Mods",
+    "追忆游丝": "Memory Threads",
+    "命运": "Kismet",
+    "特殊棱镜": "Special Prism",
+    "异度棱镜": "Ethereal Prism",
+
+
+
+
+
     "请在游戏设置界面开启日志，点击返回登录，选择角色重新进入游戏": "Please \"Enable Log\" in \"Settings -> Other\" then sort your backpack, or reselect your character",
     "先在游戏设置内点击开启日志，然后重新选择角色进入游戏": "Please \"Enable Log\" in \"Settings -> Other\" then sort your backpack, or reselect your character",
     "保存上一次记录的数据到历史记录，开始新的刷图记录": "Saves the data from your last session to history",
