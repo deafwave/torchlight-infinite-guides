@@ -74,13 +74,9 @@ jobs:
 
             - Updated translations from TLIDB API
           files: |
-            etor-english.js
             build/etor-english.zip
-            etor-japanese.js
             build/etor-japanese.zip
-            etor-korean.js
             build/etor-korean.zip
-            etor-russian.js
             build/etor-russian.zip
           draft: false
           prerelease: false
