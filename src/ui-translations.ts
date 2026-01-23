@@ -101,7 +101,6 @@ const enTranslations: Record<string, string> = {
     "用时": "Duration",
     "小时": "Hour",
     "每日": "Daily",
-    "易火": "ETor",
     "总览": "Overview",
     "物品": "Items",
     "扣税": "After Tax",
