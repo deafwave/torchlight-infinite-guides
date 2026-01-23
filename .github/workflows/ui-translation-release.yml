@@ -2,6 +2,9 @@ name: UI Translation Release
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'src/ui-translations.ts'
 
 concurrency:
   group: ${{ github.repository }}-manual-release
