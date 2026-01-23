@@ -41,7 +41,7 @@ const enTranslations: Record<string, string> = {
     "异度棱镜": "Ethereal Prism",
     "状态:": "Status:",
     "/分": "/min",
-    "当前地图效率": "Current Efficiency:",
+    "当前效率": "Current Efficiency:",
     "当前利/拾/本": "Profit/Looted/Mapcost",
     "总计地图效率": "Overall Efficiency",
     "易火记录中:S11赛季": "Tracking: S11Season",
