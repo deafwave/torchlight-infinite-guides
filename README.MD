@@ -16,7 +16,7 @@
 Builds are automated via [GitHub Actions](https://github.com/ChandlerFerry/torchlight-infinite-guides/actions).
 
 ### Method 2: Manual
-This method requires you to have the original ETOR application.
+This method requires you to have the [original ETOR application](./docs/etor-faq.MD#where-can-i-download-the-original-etor).
 
 1. Open ETOR and press `Ctrl+Shift+I` to open the developer console.
 2. In the console, type `allow pasting` and press Enter.
