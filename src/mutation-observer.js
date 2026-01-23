@@ -1,6 +1,6 @@
 function translateText(text) {
   let result = text;
-  const allTranslations = { ...itemNames, ...uiTranslations };
+  const allTranslations = { ...databaseData, ...uiTranslations };
   // Sort by length descending to match longer phrases first
   const sortedEntries = Object.entries(allTranslations).sort((a, b) => b[0].length - a[0].length);
   for (const [chinese, english] of sortedEntries) {

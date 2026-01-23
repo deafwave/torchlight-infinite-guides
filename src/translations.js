@@ -1,4 +1,4 @@
-const itemNames = {
+const databaseData = {
   "“居民”的眼睛": "Resident's Eye",
   "“狩门人”": "Doorhunter",
   "“探险家”": "\"Explorer\"",
