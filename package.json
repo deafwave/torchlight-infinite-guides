@@ -1,7 +1,11 @@
 {
-  "name": "tlidb-translator",
+  "name": "etor-translations",
   "version": "1.0.2",
-  "description": "Translation system for ETOR via Torchlight Infinite DB",
+  "description": "易火-ETor Translated",
+  "author": "Chandler Ferry",
+  "contributors": [
+    "fkh 710421059@qq.com"
+  ],
   "type": "module",
   "scripts": {
     "build": "tsx src/scripts/build-translations.ts",

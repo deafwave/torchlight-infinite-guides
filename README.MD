@@ -1,5 +1,5 @@
 
-# Torchlight Infinite Loot Tracker Translations & Info
+# ETOR Translations for Torchlight Infinite (Loot Tracker, Price History, Leaderboards, etc.)
 [Donate @ Ko-fi](https://ko-fi.com/deafwave)
 
 [Releases](https://github.com/ChandlerFerry/torchlight-infinite-guides/releases)

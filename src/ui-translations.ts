@@ -2,7 +2,7 @@ const enTranslations: Record<string, string> = {
     "易火 ETor": "易火 ETor (ChandlerFerry)",
     "易火-ETor": "易火-ETor (ChandlerFerry)",
     "日志未打开或背包未整理": "Failed to load item data",
-    "请整理背包或小退重选人物才能正常记录物品数据": "Please organize your backpack or reselect a character in order to fix recording item data.",
+    "请整理背包或小退重选人物才能正常记录物品数据": 'Please "Enable Log" in "Settings -> Other" then sort your backpack, or reselect your character',
     // "猫1": "E1",
     // "猫2": "E2",
     // "猫3": "E3",
