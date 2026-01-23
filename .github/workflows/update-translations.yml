@@ -45,7 +45,7 @@ jobs:
           message: 'chore: update translations from TLIDB'
           author_name: github-actions[bot]
           author_email: github-actions[bot]@users.noreply.github.com
-          add: 'src/translations.js etor-english-script.js'
+          add: '.'
           push: false
 
       - name: Bump patch version and push
@@ -75,7 +75,13 @@ jobs:
 
             - Updated translations from TLIDB API
           files: |
-            etor-english-script.js
+            etor-english.js
             build/etor-english.zip
+            etor-japanese.js
+            build/etor-japanese.zip
+            etor-korean.js
+            build/etor-korean.zip
+            etor-russian.js
+            build/etor-russian.zip
           draft: false
           prerelease: false

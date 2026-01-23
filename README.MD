@@ -17,7 +17,7 @@
 2. Ctrl+Shift+I
 3. Console Tab
 4. Type `allow pasting` and press enter
-5. Paste the data from [etor_english.js](etor-english.js) & press enter
+5. Paste the data from [etor-english.js](etor-english.js) & press enter
 6. Close the console
 
 ### Before

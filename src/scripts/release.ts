@@ -72,20 +72,18 @@ function extractAsar() {
 async function injectScript(lang: Language) {
   const langName = LANG_NAMES[lang];
   const preloadPath = join(appDir, 'build', 'obf-app', 'preload.js');
-  const translationScriptPath = join(rootDir, `etor-${langName}-script.js`);
+  const translationScriptPath = join(rootDir, `etor-${langName}.js`);
 
   if (!existsSync(preloadPath)) {
     throw new Error(`preload.js not found at ${preloadPath}`);
   }
 
   if (!existsSync(translationScriptPath)) {
-    throw new Error(`etor-${langName}-script.js not found. Run 'npm run pull' first.`);
+    throw new Error(`etor-${langName}.js not found. Run 'npm run pull' first.`);
   }
 
-  console.log(`Reading ${langName} translation script...`);
   const translationScript = readFileSync(translationScriptPath, 'utf-8');
 
-  console.log('Minifying script...');
   const minified = await transform(translationScript, {
     minify: true,
     loader: 'js',
@@ -116,7 +114,6 @@ async function injectScript(lang: Language) {
 }
 
 function repackAsar() {
-  console.log('Repacking app.asar...');
   rmSync(asarPath);
   run(`npx @electron/asar pack "${appDir}" "${asarPath}"`, rootDir);
   rmSync(appDir, { recursive: true });
@@ -130,7 +127,6 @@ async function createZip(lang: Language): Promise<string> {
     rmSync(zipPath);
   }
 
-  console.log(`Creating ${langName} zip archive...`);
   return new Promise((resolve, reject) => {
     sevenZip.pack(etorDir, zipPath, (err: Error | null) => {
       if (err) reject(err);
