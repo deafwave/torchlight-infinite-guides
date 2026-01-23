@@ -40,7 +40,7 @@ const enTranslations: Record<string, string> = {
     "特殊棱镜": "Special Prism",
     "异度棱镜": "Ethereal Prism",
     "状态:": "Status:",
-    "/分钟": "/min",
+    "/分 用时": "/min Duration",
     "当前效率": "Current Efficiency:",
     "当前利/拾/本": "Profit/Looted/Mapcost",
     "总计地图效率": "Overall Efficiency",
