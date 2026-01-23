@@ -29,6 +29,6 @@
 
 ## Other Guides
 
-- [Carino Build Guide](./docs/carino.MD) (WIP)
-- [Tiered Strategies](./docs/strategies_tiered.MD) (WIP)
-- [Pet Auto Switch Groups](./docs/pet_auto_switch_groups.MD) (WIP)
+- [Carino Step-By-Step Build Guide](./docs/guides/carino.MD) (WIP)
+- [Tiered Strategies](./docs/guides/strategies_tiered.MD) (WIP)
+- [Pet Auto Switch Groups](./docs/guides/pet_auto_switch_groups.MD) (WIP)
