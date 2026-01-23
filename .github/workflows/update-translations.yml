@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Pull translations and update etor_english.js
+      - name: Pull translations and build script
         run: npm run pull
 
       - name: Commit and push changes
@@ -49,17 +49,36 @@ jobs:
           message: 'chore: update translations from TLIDB'
           author_name: github-actions[bot]
           author_email: github-actions[bot]@users.noreply.github.com
-          add: 'src/translations.json src/etor_english.js'
+          add: 'src/translations.json etor-english-script.js'
           push: false
 
       - name: Bump patch version and push
         if: steps.commit.outputs.committed == 'true'
+        id: version
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # Bump patch version, create tag and commit
-          pnpm version patch -m "chore: release %s"
+          npm version patch -m "chore: release %s"
+          # Extract new version
+          NEW_VERSION=$(node -p "require('./package.json').version")
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
           # Push commit and tags
           git push
           git push --tags
+
+      - name: Create GitHub Release
+        if: steps.commit.outputs.committed == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.version.outputs.new_version }}
+          name: Release v${{ steps.version.outputs.new_version }}
+          body: |
+            Automated translation update from TLIDB
+
+            - Updated translations from TLIDB API
+            - Built userscript for browser extension
+          files: etor-english-script.js
+          draft: false
+          prerelease: false

@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "tsx src/scripts/build-translations.ts",
+    "build-script": "tsx src/scripts/build-script.ts",
     "translate": "tsx src/scripts/translate.ts",
-    "update-etor": "tsx src/scripts/update-etor.ts",
-    "pull": "npm run build && npm run update-etor"
+    "pull": "npm run build && npm run build-script"
   },
   "devDependencies": {
     "tsx": "^4.7.0",
