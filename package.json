@@ -1,7 +1,7 @@
 {
   "name": "etor-translations",
   "version": "1.0.11",
-  "description": "易火-ETor Translated",
+  "description": "易火-ETor (CF) is a translated ETOR app with additional security features.",
   "author": "Chandler Ferry",
   "contributors": [
     "fkh 710421059@qq.com"
@@ -12,8 +12,7 @@
     "build-script": "tsx src/scripts/build-script.ts",
     "translate": "tsx src/scripts/translate.ts",
     "pull": "npm run build && npm run build-script",
-    "release": "tsx src/scripts/release.ts",
-    "inject-shell-blocker": "tsx src/scripts/inject-shell-blocker.ts"
+    "release": "tsx src/scripts/release.ts"
   },
   "devDependencies": {
     "@types/node": "^25.0.10",
