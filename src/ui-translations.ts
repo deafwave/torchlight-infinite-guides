@@ -4,6 +4,12 @@ import { atlasTalentTranslations } from "./atlas-talents"
 import { Lang, Translations } from "./translations.types"
 
 const patchNotes: Translations = {
+    "征战": {
+        en: "War"
+    },
+    "通缉": {
+        en: "Outlaw"
+    },
     "玩偶": {
         en: "Clockwork"
     },
