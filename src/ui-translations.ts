@@ -4,6 +4,9 @@ import { atlasTalentTranslations } from "./atlas-talents"
 import { Lang, Translations } from "./translations.types"
 
 const patchNotes: Translations = {
+    "玩偶": {
+        en: "Clockwork"
+    },
     "在各个模块中添加根据ItemsType的价值分布图": {
         en: "Added value distribution charts by ItemsType in various modules"
     },
