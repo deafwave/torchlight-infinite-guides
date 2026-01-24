@@ -18178,6 +18178,9 @@
     }
   };
   var uiTranslations = {
+    "\u8BB0\u5F55\u72B6\u6001\u5F02\u5E38\uFF01\uFF01\uFF01\u8BF7\u5728\u6E38\u620F\u8BBE\u7F6E\u754C\u9762\u5F00\u542F\u65E5\u5FD7\uFF0C\u70B9\u51FB\u8FD4\u56DE\u767B\u5F55\uFF0C\u9009\u62E9\u89D2\u8272\u91CD\u65B0\u8FDB\u5165\u6E38\u620F\uFF01\uFF01": {
+      en: 'Error! Please "Enable Log" in "Settings -> Other" then sort your backpack, or reselect your character!!'
+    },
     "\u4E07\u754C": {
       en: "Rift of Dimensions"
     },
