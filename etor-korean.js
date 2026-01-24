@@ -17604,19 +17604,19 @@
       en: "In Netherrealm stages, when Lucky Supplies trigger during the Hijacking Operation, there is a 10% chance to trigger an additional time"
     },
     "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6": {
-      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Components"
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Mods"
     },
     "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6-\u8FD1\u536B": {
-      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Component - Guard"
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Mod - Vanguard"
     },
     "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6-\u72D9\u51FB": {
-      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Component - Sniper"
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Mod - Sniper"
     },
     "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6-\u672F\u58EB": {
-      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Component - Sorcerer"
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Mod - Warlock"
     },
     "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6-\u91CD\u88C5": {
-      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Component - Heavy"
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Mod - Tank"
     },
     "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC +1% \u6389\u843D\u6570\u91CF": {
       en: "In Netherrealm stages, Trial: God of Might has +1% Drop Quantity"
