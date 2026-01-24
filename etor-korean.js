@@ -17982,6 +17982,9 @@
 
   // src/ui-translations.ts
   var patchNotes = {
+    "\u73A9\u5076": {
+      en: "Clockwork"
+    },
     "\u5728\u5404\u4E2A\u6A21\u5757\u4E2D\u6DFB\u52A0\u6839\u636EItemsType\u7684\u4EF7\u503C\u5206\u5E03\u56FE": {
       en: "Added value distribution charts by ItemsType in various modules"
     },
