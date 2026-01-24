@@ -205,7 +205,9 @@ const tempBruteForceTranslations: Translations = {
     },
 }
 const uiTranslations: Translations = {
-
+    "记录状态异常！！！请在游戏设置界面开启日志，点击返回登录，选择角色重新进入游戏！！": {
+      en: "Error! Please \"Enable Log\" in \"Settings -> Other\" then sort your backpack, or reselect your character!!"  
+    },
     "万界": {
         en: "Rift of Dimensions"
     },

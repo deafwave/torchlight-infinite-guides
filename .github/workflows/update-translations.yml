@@ -85,6 +85,6 @@ jobs:
           draft: true
           prerelease: false
 
-      # - uses: eregon/publish-release@v1
-      #   with:
-      #     release_id: ${{ steps.create_release.outputs.id }}
+      - uses: eregon/publish-release@v1
+        with:
+          release_id: ${{ steps.create_release.outputs.id }}
