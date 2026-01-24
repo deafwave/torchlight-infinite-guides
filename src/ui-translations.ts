@@ -1,12 +1,5 @@
 // The website has a qe.settings.language that converts a few words from Chinese to English.
 // However, this is not accessible from the global scope at this time, and passing a queryParam nor changing the local settings.json work either
-
-// const y = Object.entries(x).sort((a, b) => b[0].length - a[0].length);
-// const aaa = {};
-// for (const [chinese, english] of y) {
-//     aaa[chinese] = english;
-// }
-
 import { atlasTalentTranslations } from "./atlas-talents"
 import { Lang, Translations } from "./translations.types"
 
