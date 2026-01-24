@@ -17982,6 +17982,18 @@
 
   // src/ui-translations.ts
   var patchNotes = {
+    "\u5929\u8D4B\u6811": {
+      en: "Constellation"
+    },
+    "\u673A\u68B0": {
+      en: "Machine"
+    },
+    "\u753B\u96EA": {
+      en: "Snowpaper"
+    },
+    "\u72E9\u730E": {
+      en: "Hunting"
+    },
     "\u5F81\u6218": {
       en: "War"
     },
@@ -18197,7 +18209,7 @@
       en: "Vorax Theater"
     },
     "\u5927\u4EA8": {
-      en: "Sandlord Oasis"
+      en: "Sandlord"
     },
     "\u6700\u4F4E\u4EF7\u683C": {
       en: "Min Price"
