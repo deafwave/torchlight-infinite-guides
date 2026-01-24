@@ -16647,6 +16647,1339 @@
     "SS4\u938F\u91D1\u624B\u518C\u8D44\u683C": "\u0421\u0442\u0430\u0442\u0443\u0441 \u043F\u043E\u0437\u043E\u043B\u043E\u0447\u0435\u043D\u043D\u043E\u0433\u043E \u043F\u0440\u043E\u043F\u0443\u0441\u043A\u0430 SS4"
   };
 
+  // src/atlas-talents.ts
+  var atlasTalentTranslations = {
+    "\u8D77\u59CB\u8282\u70B9": {
+      en: "Initial Node"
+    },
+    "\u5C0F\u578B\u8282\u70B9": {
+      en: "Micro Node"
+    },
+    "\u4E2D\u578B\u8282\u70B9": {
+      en: "Medium Node"
+    },
+    "\u5927\u578B\u8282\u70B9": {
+      en: "Major Node"
+    },
+    "\u61CA\u6094-\u68A6\u9B47": {
+      en: "Regretful - Nightmare"
+    },
+    "\u4FDD\u5B88-\u673A\u68B0": {
+      en: "Conservative - Machine"
+    },
+    "\u66B4\u8E81-\u5DE8\u529B": {
+      en: "Irritable - Might"
+    },
+    "\u60E9\u6212-\u56DA\u7B3C": {
+      en: "Punitive - Cage"
+    },
+    "\u75F4\u5984-\u9B54\u65B9": {
+      en: "Foolish - Cube"
+    },
+    "\u803B\u8FB1-\u9ED1\u6F6E": {
+      en: "Disgraceful - Dark Surge"
+    },
+    "\u53E0\u754C\u7684\u53EF\u6311\u6218\u6B21\u6570 -1": {
+      en: "Overrealm challenge attempts -1"
+    },
+    "\u53E0\u754C\u7684\u53EF\u6311\u6218\u6B21\u6570 -2": {
+      en: "Overrealm challenge attempts -2"
+    },
+    "\u53E0\u754C\u4E2D\uFF0C\u5F53\u524D\u5DF2\u83B7\u5F97\u7684\u74F6\u4E2D\u53E0\u5F71\u7A00\u6709\u5EA6\u8D8A\u9AD8\uFF0C\u53E0\u754C\u8FDB\u5165\u4E0B\u4E00\u5C42\u7684\u6982\u7387\u8D8A\u9AD8": {
+      en: "Within the Overrealm, the higher the rarity of the Bottled Shadows you've obtained, the higher the chance for the Overrealm to advance to the next level"
+    },
+    "\u53E0\u754C\u4E2D\uFF0C\u8FDB\u5165\u4E0B\u4E00\u5C42\u7684\u6982\u7387\u63D0\u9AD8 50%": {
+      en: "+50% chance of advancing to the next level in the Overrealm"
+    },
+    "\u53E0\u754C\u4E2D\uFF0C\u4F60\u65E0\u6CD5\u518D\u83B7\u5F97\u74F6\u4E2D\u53E0\u5F71": {
+      en: "You can no longer obtain Bottled Shadows in the Overrealm"
+    },
+    "\u53E0\u754C\u4E2D\u4E0D\u518D\u51FA\u73B0\u53E0\u754C\u6270\u52A8\uFF1A\u590D\u751F\uFF0C\u51FA\u73B0\u5176\u4ED6\u53E0\u754C\u6270\u52A8\u7684\u6982\u7387\u63D0\u9AD8 50%": {
+      en: "Overrealm Disturbance: Resurrection no longer appears in the Overrealm. The chance for other Overrealm Disturbances to appear increases by 50%"
+    },
+    "\u53E0\u754C\u4E2D\u4E0D\u518D\u51FA\u73B0\u53E0\u754C\u6270\u52A8\uFF1A\u76D1\u7981\uFF0C\u51FA\u73B0\u5176\u4ED6\u53E0\u754C\u6270\u52A8\u7684\u6982\u7387\u63D0\u9AD8 50%": {
+      en: "Overrealm Disturbance: Imprisonment no longer appears in the Overrealm. The chance for other Overrealm Disturbances to appear increases by 50%"
+    },
+    "\u53E0\u754C\u4E2D\u4E0D\u518D\u51FA\u73B0\u53E0\u754C\u6270\u52A8\uFF1A\u5760\u843D\uFF0C\u51FA\u73B0\u5176\u4ED6\u53E0\u754C\u6270\u52A8\u7684\u6982\u7387\u63D0\u9AD8 50%": {
+      en: "Overrealm Disturbance: Fall no longer appears in the Overrealm. The chance for other Overrealm Disturbances to appear increases by 50%"
+    },
+    "\u53E0\u754C\u4E2D\u51FA\u73B0\u53E0\u754C\u6270\u52A8\u7684\u6982\u7387\u63D0\u9AD8 30%": {
+      en: "The chance for Overrealm Disturbance to appear in the Overrealm increases by 30%"
+    },
+    "\u53E0\u754C\u4E2D\u51FA\u73B0\u53E0\u754C\u6270\u52A8\u7684\u6982\u7387\u63D0\u9AD8 8%": {
+      en: "The chance for Overrealm Disturbance to appear in the Overrealm increases by 8%"
+    },
+    "\u53E0\u754C\u4E2D\u7684\u52B2\u654C +1% \u7684\u6982\u7387\u590D\u751F": {
+      en: "+ 1% chance for Elites in the Overrealm to revive"
+    },
+    "\u53E0\u754C\u4E2D\u7684\u52B2\u654C +6% \u7684\u6982\u7387\u590D\u751F": {
+      en: "+ 6% chance for Elites in the Overrealm to revive"
+    },
+    "\u53E0\u754C\u4E2D\u7684\u6BCF\u4E00\u5C42 +15% \u6982\u7387\u51FA\u73B0\u5B88\u95E8\u4EBA": {
+      en: "+15% chance for Doorkeepers to appear in each level of the Overrealm"
+    },
+    '\u53E0\u754C\u4E2D\u7684\u6F02\u6D6E\u5934\u9885\u3001\u9006\u6A21\u56E0\u4E4B\u7B3C\u3001"\u72E9\u95E8\u4EBA"\u4F1A\u6807\u8BB0\u5728\u5C0F\u5730\u56FE\u4E0A': {
+      en: 'In the Overrealm, Floating Skull, Antimemetic Cage, and "Doorhunter" are marked on the Minimap'
+    },
+    '\u53E0\u754C\u4E2D\u7684\u5B88\u95E8\u4EBA\u88AB\u51FB\u8D25\u65F6\uFF0C +16% \u6982\u7387\u5F15\u6765"\u72E9\u95E8\u4EBA"': {
+      en: '+ 16% chance for a Doorkeeper to appear when "Doorhunter" is defeated in the Overrealm'
+    },
+    "\u53E0\u754C\u4E2D\u6389\u843D\u6570\u91CF\u989D\u5916 +1.5%": {
+      en: "+1.5% additional Drop Quantity in the Overrealm"
+    },
+    "\u53E0\u754C\u4E2D\u6389\u843D\u6570\u91CF\u989D\u5916 +10%": {
+      en: "+10% additional Drop Quantity in the Overrealm"
+    },
+    "\u53E0\u754C\u4E2D\u6389\u843D\u6570\u91CF\u989D\u5916 +2%": {
+      en: "+2% additional Drop Quantity in the Overrealm"
+    },
+    "\u53E0\u754C\u4E2D\u6389\u843D\u6570\u91CF\u989D\u5916 +3%": {
+      en: "+3% additional Drop Quantity in the Overrealm"
+    },
+    "\u53E0\u754C\u4E2D\u6389\u843D\u6570\u91CF\u989D\u5916 +4%": {
+      en: "+4% additional Drop Quantity in the Overrealm"
+    },
+    "\u53E0\u754C\u4E2D\u6389\u843D\u6570\u91CF\u989D\u5916 +6%": {
+      en: "+6% additional Drop Quantity in the Overrealm"
+    },
+    "\u53E0\u754C\u4E2D\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -10%": {
+      en: "Monsters in the Overrealm take -10% additional damage"
+    },
+    "\u53E0\u754C\u4E2D\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -20%": {
+      en: "Monsters in the Overrealm take -20% additional damage"
+    },
+    "\u53E0\u754C\u4E2D\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -30%": {
+      en: "Monsters in the Overrealm take -30% additional damage"
+    },
+    "\u53E0\u754C\u4E2D\u6BCF\u5C42\u521D\u59CB\u65F6\u95F4 -3 \u79D2": {
+      en: "The default time of each level in the Overrealm -3s"
+    },
+    "\u53E0\u754C\u4E2D\u6BCF\u5C42\u521D\u59CB\u65F6\u95F4 -4 \u79D2": {
+      en: "The default time of each level in the Overrealm -4s"
+    },
+    "\u53E0\u754C\u4E2D\u6BCF\u5C42\u521D\u59CB\u65F6\u95F4 -5 \u79D2": {
+      en: "The default time of each level in the Overrealm -5s"
+    },
+    "\u653E\u7EB5-\u73A9\u5076": {
+      en: "Indulgent - Doll"
+    },
+    "\u6124\u6168-\u5DE8\u529B": {
+      en: "Indignant - Might"
+    },
+    "\u6D6E\u534E-\u73A9\u5076": {
+      en: "Ostentatious - Doll"
+    },
+    "\u8D1F\u7F6A-\u56DA\u7B3C": {
+      en: "Guilty - Cage"
+    },
+    "\u5173\u5361\u4E2D\u6709 3% \u6982\u7387\u5B58\u5728 1 \u7FA4\u5973\u738B\u6248\u4ECE\uFF0C\u51FB\u8D25\u5B83\u4EEC\u6709\u6982\u7387\u6389\u843D\u4FE1\u6807": {
+      en: "3% chance to spawn a group of Queen's Minions in the map, defeating them may drop Beacons"
+    },
+    "\u6000\u6068-\u9B54\u65B9": {
+      en: "Spiteful - Cube"
+    },
+    "\u5E7B\u706D-\u68A6\u9B47": {
+      en: "Disillusioned - Nightmare"
+    },
+    "\u6325\u970D-\u73A9\u5076": {
+      en: "Wasteful - Doll"
+    },
+    "\u6781\u6B32-\u9B54\u65B9": {
+      en: "Desire Incarnation - Cube"
+    },
+    "\u89CA\u89CE-\u9B54\u65B9": {
+      en: "Covetous - Cube"
+    },
+    "\u9A84\u7EB5-\u5DE8\u529B": {
+      en: "Willful - Might"
+    },
+    "\u7EDD\u671B-\u68A6\u9B47": {
+      en: "Hopeless - Nightmare"
+    },
+    "\u523B\u677F-\u673A\u68B0": {
+      en: "Rigid - Machine"
+    },
+    "\u72C2\u70ED-\u5DE8\u529B": {
+      en: "Mania - Might"
+    },
+    "\u72C2\u5984-\u901A\u7F09": {
+      en: "Conceited - Outlaw"
+    },
+    "\u72C2\u60F3-\u9B54\u65B9": {
+      en: "Fallacious - Cube"
+    },
+    "\u6127\u759A-\u9ED1\u6F6E": {
+      en: "Remorseful - Dark Surge"
+    },
+    "\u51B7\u6F20-\u753B\u96EA": {
+      en: "Cold - The Frozen Canvas"
+    },
+    "\u8499\u7F9E-\u9ED1\u6F6E": {
+      en: "Humiliated - Dark Surge"
+    },
+    "\u6728\u8BB7-\u673A\u68B0": {
+      en: "Obtuse - Machine"
+    },
+    "\u504F\u6267-\u673A\u68B0": {
+      en: "Paranoid - Machine"
+    },
+    "\u82E5\u5F02\u754C\u5173\u5361\u5728\u5F00\u542F\u65F6\u6CA1\u6709\u653E\u5165\u7F57\u76D8\uFF0C\u5219\u9B54\u6CD5\u602A\u7269\u6709 0.2% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u4FE1\u6807": {
+      en: "If no Compasses are placed when starting a Netherrealm stage, Magic monsters have a 0.2% chance to drop 1 additional Beacon(s)"
+    },
+    "\u82E5\u5F02\u754C\u5173\u5361\u5728\u5F00\u542F\u65F6\u6CA1\u6709\u653E\u5165\u7F57\u76D8\uFF0C\u5219\u9996\u9886\u6709 3% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u7F57\u76D8": {
+      en: "If no Compasses are placed when starting a Netherrealm stage, the boss has a 3% chance to drop 1 additional Compass(es)"
+    },
+    "\u5962\u9761-\u73A9\u5076": {
+      en: "Extravagant - Doll"
+    },
+    "\u5931\u671B-\u68A6\u9B47": {
+      en: "Disappointed - Nightmare"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u4FDD\u5B88-\u673A\u68B0\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Conservative - Machine] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u66B4\u8E81-\u5DE8\u529B\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Irritable - Might] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u60E9\u6212-\u56DA\u7B3C\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Punitive - Cage] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u75F4\u5984-\u9B54\u65B9\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Foolish - Cube] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u803B\u8FB1-\u9ED1\u6F6E\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Disgraceful - Dark Surge] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6124\u6168-\u5DE8\u529B\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Indignant - Might] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6D6E\u534E-\u73A9\u5076\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Ostentatious - Doll] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u8D1F\u7F6A-\u56DA\u7B3C\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Guilty - Cage] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6000\u6068-\u9B54\u65B9\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Spiteful - Cube] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u5E7B\u706D-\u68A6\u9B47\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Disillusioned - Nightmare] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6325\u970D-\u73A9\u5076\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Wasteful - Doll] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6781\u6B32-\u9B54\u65B9\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Desire Incarnation - Cube] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u89CA\u89CE-\u9B54\u65B9\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Covetous - Cube] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u7EDD\u671B-\u68A6\u9B47\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Hopeless - Nightmare] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u514B\u5236-\u53E0\u754C\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Restrained - Overrealm] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u72C2\u70ED-\u5DE8\u529B\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Mania - Might] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u72C2\u5984-\u901A\u7F09\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Conceited - Outlaw] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u72C2\u60F3-\u9B54\u65B9\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Fallacious - Cube] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6127\u759A-\u9ED1\u6F6E\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Remorseful - Dark Surge] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u8499\u7F9E-\u9ED1\u6F6E\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Humiliated - Dark Surge] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6728\u8BB7-\u673A\u68B0\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Obtuse - Machine] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u504F\u6267-\u673A\u68B0\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Paranoid - Machine] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u5F3A\u52BF-\u53E0\u754C\uFF08\u6A59\uFF09\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Dominant - Overrealm (Orange)] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u5962\u9761-\u73A9\u5076\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Extravagant - Doll] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u5931\u63A7-\u53E0\u754C\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Uncontrolled - Overrealm] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u5931\u671B-\u68A6\u9B47\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Disappointed - Nightmare] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u8083\u5BC2-\u753B\u96EA\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Harsh - The Frozen Canvas] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u987D\u56FA-\u673A\u68B0\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Obstinate - Machine] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6C61\u8511-\u9ED1\u6F6E\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Slanderous - Dark Surge] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6B66\u65AD-\u901A\u7F09\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Dogmatic - Outlaw] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u538B\u6291-\u901A\u7F09\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Oppressive - Outlaw] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u4E25\u5CFB-\u753B\u96EA\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Severe - The Frozen Canvas] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u5F02\u7AEF-\u9ED1\u6F6E\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Heretical - Dark Surge] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u9707\u6012-\u5DE8\u529B\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Wrathful - Might] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 1 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u4E13\u6A2A-\u901A\u7F09\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 1 and above, Confusion Card [Tyrannical - Outlaw] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u7684\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u788E\u661F\u6709 2% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages (Timemark 7 or higher), Starshards dropped have a 2% chance to be replicated once"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u7684\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u788E\u661F\u6709 5% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages (Timemark 7 or higher), Starshards dropped have a 5% chance to be replicated once"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u7684\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u788E\u661F\u6709 8% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages (Timemark 7 or higher), Starshards dropped have a 8% chance to be replicated once"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u61CA\u6094-\u68A6\u9B47\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 7 and above, Confusion Card [Regretful - Nightmare] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u653E\u7EB5-\u73A9\u5076\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 7 and above, Confusion Card [Indulgent - Doll] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u9A84\u7EB5-\u5DE8\u529B\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 7 and above, Confusion Card [Willful - Might] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u523B\u677F-\u673A\u68B0\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 7 and above, Confusion Card [Rigid - Machine] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u51B7\u6F20-\u753B\u96EA\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 7 and above, Confusion Card [Cold - The Frozen Canvas] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u60CB\u60DC-\u68A6\u9B47\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 7 and above, Confusion Card [Repentant - Nightmare] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u865A\u8363-\u73A9\u5076\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 7 and above, Confusion Card [Vain - Doll] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u611A\u949D-\u673A\u68B0\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 7 and above, Confusion Card [Dull - Machine] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 7 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u6028\u6068-\u9ED1\u6F6E\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 7 and above, Confusion Card [Resentful - Dark Surge] joins the Confusion Deck"
+    },
+    "\u65F6\u523B 8 \u53CA\u4EE5\u4E0A\u65F6\uFF0C\u6DF7\u4E71\u5361\u724C\u3010\u5F3A\u52BF-\u53E0\u754C\uFF08\u5F69\uFF09\u3011\u52A0\u5165\u6DF7\u4E71\u5361\u7EC4": {
+      en: "At Timemark 8 and above, Confusion Card [Dominant - Overrealm (Prismatic)] joins the Confusion Deck"
+    },
+    "\u8083\u5BC2-\u753B\u96EA": {
+      en: "Harsh - The Frozen Canvas"
+    },
+    "\u5B8C\u6210\u5F02\u754C\u5173\u5361\u65F6\uFF0C\u6709 1% \u6982\u7387\u5728\u9996\u9886\u533A\u57DF\u989D\u5916\u751F\u6210 1 \u4E2A\u795E\u79D8\u5B9D\u7BB1": {
+      en: "1% chance for 1 additional Mystery Chest(s) to be spawned in the boss area when completing Netherrealm stages"
+    },
+    "\u5B8C\u6210\u5F02\u754C\u5173\u5361\u65F6\uFF0C\u6709 3% \u6982\u7387\u5728\u9996\u9886\u533A\u57DF\u989D\u5916\u751F\u6210 1 \u4E2A\u795E\u79D8\u5B9D\u7BB1": {
+      en: "3% chance for 1 additional Mystery Chest(s) to be spawned in the boss area when completing Netherrealm stages"
+    },
+    "\u5B8C\u6210\u5F02\u754C\u5173\u5361\u65F6\uFF0C\u6709 5% \u6982\u7387\u5728\u9996\u9886\u533A\u57DF\u989D\u5916\u751F\u6210 1 \u4E2A\u795E\u79D8\u5B9D\u7BB1": {
+      en: "5% chance for 1 additional Mystery Chest(s) to be spawned in the boss area when completing Netherrealm stages"
+    },
+    "\u987D\u56FA-\u673A\u68B0": {
+      en: "Obstinate - Machine"
+    },
+    "\u60CB\u60DC-\u68A6\u9B47": {
+      en: "Repentant - Nightmare"
+    },
+    "\u6C61\u8511-\u9ED1\u6F6E": {
+      en: "Slanderous - Dark Surge"
+    },
+    "\u6B66\u65AD-\u901A\u7F09": {
+      en: "Dogmatic - Outlaw"
+    },
+    "\u865A\u8363-\u73A9\u5076": {
+      en: "Vain - Doll"
+    },
+    "\u538B\u6291-\u901A\u7F09": {
+      en: "Oppressive - Outlaw"
+    },
+    "\u4E25\u5CFB-\u753B\u96EA": {
+      en: "Severe - The Frozen Canvas"
+    },
+    "\u5F02\u7AEF-\u9ED1\u6F6E": {
+      en: "Heretical - Dark Surge"
+    },
+    "\u5F02\u754C\u5173\u5361 +10% \u6982\u7387\u88AB\u9ED1\u6F6E\u5F7B\u5E95\u6DF9\u6CA1\u4E86": {
+      en: "+10% chance for Netherrealm stages to be completely flooded by the Dark Surge"
+    },
+    "\u5F02\u754C\u5173\u5361 +15% \u6982\u7387\u88AB\u9ED1\u6F6E\u5F7B\u5E95\u6DF9\u6CA1\u4E86": {
+      en: "+15% chance for Netherrealm stages to be completely flooded by the Dark Surge"
+    },
+    "\u5F02\u754C\u5173\u5361 +23% \u6982\u7387\u88AB\u9ED1\u6F6E\u5F7B\u5E95\u6DF9\u6CA1\u4E86": {
+      en: "+23% chance for Netherrealm stages to be completely flooded by the Dark Surge"
+    },
+    "\u5F02\u754C\u5173\u5361 +3% \u6982\u7387\u88AB\u9ED1\u6F6E\u5F7B\u5E95\u6DF9\u6CA1\u4E86": {
+      en: "+3% chance for Netherrealm stages to be completely flooded by the Dark Surge"
+    },
+    "\u5F02\u754C\u5173\u5361 +4% \u6982\u7387\u88AB\u9ED1\u6F6E\u5F7B\u5E95\u6DF9\u6CA1\u4E86": {
+      en: "+4% chance for Netherrealm stages to be completely flooded by the Dark Surge"
+    },
+    "\u5F02\u754C\u5173\u5361 +6% \u6982\u7387\u88AB\u9ED1\u6F6E\u5F7B\u5E95\u6DF9\u6CA1\u4E86": {
+      en: "+6% chance for Netherrealm stages to be completely flooded by the Dark Surge"
+    },
+    "\u5F02\u754C\u5173\u5361\u88AB\u9ED1\u6F6E\u6DF9\u6CA1\u65F6\uFF0C \u6709 3% \u6982\u7387\u4F7F\u5173\u5361\u4E2D\u7684\u6240\u6709\u602A\u7269\u88AB\u9ED1\u6F6E\u4FB5\u8680": {
+      en: "When Netherrealm stages are flooded by Dark Surge, there is a 3% chance for all monsters in the stage to be eroded by the Dark Surge"
+    },
+    "\u5F02\u754C\u5173\u5361\u88AB\u9ED1\u6F6E\u6DF9\u6CA1\u65F6\uFF0C\u6240\u6709\u975E\u539F\u751F\u7A00\u6709\u602A\u7269\u88AB\u9ED1\u6F6E\u4FB5\u8680": {
+      en: "When Netherrealm stages are flooded by Dark Surge, all non-native Rare monsters are eroded by the Dark Surge"
+    },
+    "\u5F02\u754C\u5173\u5361\u5904\u4E8E\u7F8E\u68A6\u4E2D\u65F6\uFF0C+10% \u6982\u7387\u989D\u5916\u51FA\u73B0 1 \u53EA\u53EF\u4EE5\u6389\u843D\u5973\u738B\u6069\u5BA0\u7684\u68A6\u9B47\u602A\u7269": {
+      en: "When Netherrealm stages are in Sweet Dream, +10% chance for 1 additional Nightmare monster that can drop Queen's Grace to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u5904\u4E8E\u7F8E\u68A6\u4E2D\u65F6\uFF0C+2% \u6982\u7387\u51FA\u73B0\u7F8E\u68A6\u4E91\u96FE": {
+      en: "When Netherrealm stages are in Sweet Dream, +2% chance for Sweet Dream Mist to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u5904\u4E8E\u7F8E\u68A6\u4E2D\u65F6\uFF0C+8% \u6982\u7387\u51FA\u73B0\u7F8E\u68A6\u4E91\u96FE": {
+      en: "When Netherrealm stages are in Sweet Dream, +8% chance for Sweet Dream Mist to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u6709 11% \u6982\u7387\u989D\u5916\u51FA\u73B0 2 \u53EA\u968F\u673A\u9996\u9886": {
+      en: "In Netherrealm stages, there is a 11% chance for 2 additional random boss(es) to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u6709 2% \u6982\u7387\u989D\u5916\u51FA\u73B0 1 \u53EA\u968F\u673A\u9996\u9886": {
+      en: "In Netherrealm stages, there is a 2% chance for 1 additional random boss(es) to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u6709 30% \u6982\u7387\u989D\u5916\u51FA\u73B0 1 \u53EA\u7A00\u6709\u602A\u7269": {
+      en: "In Netherrealm stages, there is a 30% chance for 1 additional Rare monster(s) to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u6709 30% \u6982\u7387\u989D\u5916\u51FA\u73B0 5 \u7FA4\u9B54\u6CD5\u602A\u7269": {
+      en: "In Netherrealm stages, there is a 30% chance for 5 additional group(s) of Magic monsters to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u6709 30% \u6982\u7387\u989D\u5916\u51FA\u73B0 7 \u7FA4\u666E\u901A\u602A\u7269": {
+      en: "In Netherrealm stages, there is a 30% chance for 7 additional group(s) of Normal monsters to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u5728\u5F00\u542F\u65F6\uFF0C\u82E5\u57FA\u7840\u8BCD\u7F00\u6570\u91CF\u4E0D\u5C0F\u4E8E 6\uFF0C\u5219\u83B7\u5F97\u4EE5\u4E0B\u8BCD\u7F00\uFF1A\\n\u5173\u5361\u6709 45% \u6982\u7387\u989D\u5916\u51FA\u73B0 2 \u53EA\u968F\u673A\u9996\u9886\\n-100% \u6389\u843D\u6570\u91CF\\n\u9996\u9886\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -50%": {
+      en: "When starting a Netherrealm stage, if the number of base affixes is 6 or more, the following affixes are applied:\\n45% chance for 2 additional random bosses to appear\\n-100% Drop Quantity\\nBosses take -50% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u5728\u5F00\u542F\u65F6\u6BCF\u653E\u5165\u4E00\u4E2A\u7F57\u76D8\uFF0C\u989D\u5916 +2.5% \u7F57\u76D8\u6389\u843D\u6570\u91CF": {
+      en: "When starting a Netherrealm stage, for each Compass placed, +2.5% additional Compass Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u6B63\u5728\u6ECB\u751F\u6076\u6B32\u65F6\uFF0C\u5173\u5361\u4E2D\u51FA\u73B0\u7684\u6781\u6B32\u5316\u8EAB\u6709 11% \u6982\u7387\u590D\u5236": {
+      en: "When Malice is accumulating in Netherrealm stages, Desire Incarnations that appear have an 11% chance to be replicated"
+    },
+    "\u5F02\u754C\u5173\u5361\u6B63\u5728\u6ECB\u751F\u6076\u6B32\u65F6\uFF0C\u6709 1% \u6982\u7387\u7528\u6076\u6B32\u5316\u8EAB\u66FF\u6362\u5168\u90E8\u602A\u7269\uFF0C\u6076\u6B32\u9B54\u65B9\u7684\u6E34\u6C42\u4E0A\u9650\u4E3A500\u6B21": {
+      en: "When Malice is accumulating in Netherrealm stages, there is a 1% chance for all monsters to be replaced with Malice Incarnations, with the Malice Cube Crave limit set to 500"
+    },
+    "\u5F02\u754C\u5173\u5361\u6B63\u5728\u6ECB\u751F\u6076\u6B32\u65F6\uFF0C\u6709 20% \u6982\u7387\u5B58\u5728\u989D\u5916 1 \u53EA\u6076\u6B32\u5BA1\u5224\u8005": {
+      en: "When Malice is accumulating in Netherrealm stages, there is a 20% chance for 1 additional Malice Inquisitor to exist"
+    },
+    "\u5F02\u754C\u5173\u5361\u6B63\u5728\u6ECB\u751F\u6076\u6B32\u65F6\uFF0C\u6709 5% \u6982\u7387\u989D\u5916\u51FA\u73B0\u4E00\u53EA\u6781\u6B32\u5316\u8EAB": {
+      en: "When Malice is accumulating in Netherrealm stages, there is a 5% chance for 1 additional Desire Incarnation to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +10% \u6982\u7387\u51FA\u73B0\u673A\u68B0\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+10% chance for Trial: God of Machines to appear in Netherrealm stages"
+    },
+    '\u5F02\u754C\u5173\u5361\u4E2D +10% \u6982\u7387\u51FA\u73B0\u8FDB\u5165\u53E0\u754C\u7684"\u95E8"': {
+      en: 'In Netherrealm stages, +10% chance for the "Door" leading to the Overrealm to appear'
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +10% \u6982\u7387\u51FA\u73B0\u5DE8\u529B\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+10% chance for Trial: God of Might to appear in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +10% \u6982\u7387\u51FA\u73B0\u4FF1\u4E50\u90E8\u6E38\u620F": {
+      en: "In Netherrealm stages, +10% chance for Clockwork Ballet Games to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +10% \u6982\u7387\u51FA\u73B0\u4E00\u53EA\u67D3\u8272\u96EA\u602A": {
+      en: "In Netherrealm stages, +10% chance for a Dyed Snow Monster to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +10% \u6982\u7387\u51FA\u73B0\u539F\u7F6A\u56DA\u7B3C": {
+      en: "In Netherrealm stages, +10% chance for Cages of Original Sin to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +10% \u6982\u7387\u751F\u957F\u7740\u68A6\u5883\u7761\u83B2": {
+      en: "+10% chance for Dream Lotuses to be growing in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +10% \u6982\u7387\u505C\u653E\u7740\u9AD8\u5854\u8FD0\u8F93\u8F66": {
+      en: "+10% chance for a TOWER Transport Vehicle to be parked in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +10% \u6982\u7387\u6B63\u5728\u6ECB\u751F\u6076\u6B32": {
+      en: "+10% chance for Malice to be accumulating in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +15% \u6982\u7387\u51FA\u73B0\u673A\u68B0\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+15% chance for Trial: God of Machines to appear in Netherrealm stages"
+    },
+    '\u5F02\u754C\u5173\u5361\u4E2D +15% \u6982\u7387\u51FA\u73B0\u8FDB\u5165\u53E0\u754C\u7684"\u95E8"': {
+      en: 'In Netherrealm stages, +15% chance for the "Door" leading to the Overrealm to appear'
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +15% \u6982\u7387\u51FA\u73B0\u5DE8\u529B\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+15% chance for Trial: God of Might to appear in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +15% \u6982\u7387\u51FA\u73B0\u4FF1\u4E50\u90E8\u6E38\u620F": {
+      en: "In Netherrealm stages, +15% chance for Clockwork Ballet Games to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +15% \u6982\u7387\u51FA\u73B0\u4E00\u53EA\u67D3\u8272\u96EA\u602A": {
+      en: "In Netherrealm stages, +15% chance for a Dyed Snow Monster to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +15% \u6982\u7387\u51FA\u73B0\u539F\u7F6A\u56DA\u7B3C": {
+      en: "In Netherrealm stages, +15% chance for Cages of Original Sin to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +15% \u6982\u7387\u751F\u957F\u7740\u68A6\u5883\u7761\u83B2": {
+      en: "+15% chance for Dream Lotuses to be growing in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +15% \u6982\u7387\u505C\u653E\u7740\u9AD8\u5854\u8FD0\u8F93\u8F66": {
+      en: "+15% chance for a TOWER Transport Vehicle to be parked in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +15% \u6982\u7387\u6B63\u5728\u6ECB\u751F\u6076\u6B32": {
+      en: "+15% chance for Malice to be accumulating in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +23% \u6982\u7387\u51FA\u73B0\u673A\u68B0\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+23% chance for Trial: God of Machines to appear in Netherrealm stages"
+    },
+    '\u5F02\u754C\u5173\u5361\u4E2D +23% \u6982\u7387\u51FA\u73B0\u8FDB\u5165\u53E0\u754C\u7684"\u95E8"': {
+      en: 'In Netherrealm stages, +23% chance for the "Door" leading to the Overrealm to appear'
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +23% \u6982\u7387\u51FA\u73B0\u5DE8\u529B\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+23% chance for Trial: God of Might to appear in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +23% \u6982\u7387\u51FA\u73B0\u4FF1\u4E50\u90E8\u6E38\u620F": {
+      en: "In Netherrealm stages, +23% chance for Clockwork Ballet Games to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +23% \u6982\u7387\u51FA\u73B0\u4E00\u53EA\u67D3\u8272\u96EA\u602A": {
+      en: "In Netherrealm stages, +23% chance for a Dyed Snow Monster to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +23% \u6982\u7387\u51FA\u73B0\u539F\u7F6A\u56DA\u7B3C": {
+      en: "In Netherrealm stages, +23% chance for Cages of Original Sin to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +23% \u6982\u7387\u751F\u957F\u7740\u68A6\u5883\u7761\u83B2": {
+      en: "+23% chance for Dream Lotuses to be growing in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +23% \u6982\u7387\u505C\u653E\u7740\u9AD8\u5854\u8FD0\u8F93\u8F66": {
+      en: "+23% chance for a TOWER Transport Vehicle to be parked in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +23% \u6982\u7387\u6B63\u5728\u6ECB\u751F\u6076\u6B32": {
+      en: "+23% chance for Malice to be accumulating in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +3% \u6982\u7387\u51FA\u73B0\u673A\u68B0\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+3% chance for Trial: God of Machines to appear in Netherrealm stages"
+    },
+    '\u5F02\u754C\u5173\u5361\u4E2D +3% \u6982\u7387\u51FA\u73B0\u8FDB\u5165\u53E0\u754C\u7684"\u95E8"': {
+      en: 'In Netherrealm stages, +3% chance for the "Door" leading to the Overrealm to appear'
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +3% \u6982\u7387\u51FA\u73B0\u5DE8\u529B\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+3% chance for Trial: God of Might to appear in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +3% \u6982\u7387\u51FA\u73B0\u4FF1\u4E50\u90E8\u6E38\u620F": {
+      en: "In Netherrealm stages, +3% chance for Clockwork Ballet Games to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +3% \u6982\u7387\u51FA\u73B0\u4E00\u53EA\u67D3\u8272\u96EA\u602A": {
+      en: "In Netherrealm stages, +3% chance for a Dyed Snow Monster to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +3% \u6982\u7387\u51FA\u73B0\u539F\u7F6A\u56DA\u7B3C": {
+      en: "In Netherrealm stages, +3% chance for Cages of Original Sin to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +3% \u6982\u7387\u751F\u957F\u7740\u68A6\u5883\u7761\u83B2": {
+      en: "+3% chance for Dream Lotuses to be growing in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +3% \u6982\u7387\u505C\u653E\u7740\u9AD8\u5854\u8FD0\u8F93\u8F66": {
+      en: "+3% chance for a TOWER Transport Vehicle to be parked in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +3% \u6982\u7387\u6B63\u5728\u6ECB\u751F\u6076\u6B32": {
+      en: "+3% chance for Malice to be accumulating in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +4% \u6982\u7387\u51FA\u73B0\u673A\u68B0\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+4% chance for Trial: God of Machines to appear in Netherrealm stages"
+    },
+    '\u5F02\u754C\u5173\u5361\u4E2D +4% \u6982\u7387\u51FA\u73B0\u8FDB\u5165\u53E0\u754C\u7684"\u95E8"': {
+      en: 'In Netherrealm stages, +4% chance for the "Door" leading to the Overrealm to appear'
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +4% \u6982\u7387\u51FA\u73B0\u5DE8\u529B\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+4% chance for Trial: God of Might to appear in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +4% \u6982\u7387\u51FA\u73B0\u4FF1\u4E50\u90E8\u6E38\u620F": {
+      en: "In Netherrealm stages, +4% chance for Clockwork Ballet Games to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +4% \u6982\u7387\u51FA\u73B0\u4E00\u53EA\u67D3\u8272\u96EA\u602A": {
+      en: "In Netherrealm stages, +4% chance for a Dyed Snow Monster to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +4% \u6982\u7387\u51FA\u73B0\u539F\u7F6A\u56DA\u7B3C": {
+      en: "In Netherrealm stages, +4% chance for Cages of Original Sin to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +4% \u6982\u7387\u751F\u957F\u7740\u68A6\u5883\u7761\u83B2": {
+      en: "+4% chance for Dream Lotuses to be growing in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +4% \u6982\u7387\u505C\u653E\u7740\u9AD8\u5854\u8FD0\u8F93\u8F66": {
+      en: "+4% chance for a TOWER Transport Vehicle to be parked in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +4% \u6982\u7387\u6B63\u5728\u6ECB\u751F\u6076\u6B32": {
+      en: "+4% chance for Malice to be accumulating in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +6% \u6982\u7387\u51FA\u73B0\u673A\u68B0\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+6% chance for Trial: God of Machines to appear in Netherrealm stages"
+    },
+    '\u5F02\u754C\u5173\u5361\u4E2D +6% \u6982\u7387\u51FA\u73B0\u8FDB\u5165\u53E0\u754C\u7684"\u95E8"': {
+      en: 'In Netherrealm stages, +6% chance for the "Door" leading to the Overrealm to appear'
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +6% \u6982\u7387\u51FA\u73B0\u5DE8\u529B\u4E4B\u795E\u7684\u8BD5\u70BC": {
+      en: "+6% chance for Trial: God of Might to appear in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +6% \u6982\u7387\u51FA\u73B0\u4FF1\u4E50\u90E8\u6E38\u620F": {
+      en: "In Netherrealm stages, +6% chance for Clockwork Ballet Games to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +6% \u6982\u7387\u51FA\u73B0\u4E00\u53EA\u67D3\u8272\u96EA\u602A": {
+      en: "In Netherrealm stages, +6% chance for a Dyed Snow Monster to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +6% \u6982\u7387\u51FA\u73B0\u539F\u7F6A\u56DA\u7B3C": {
+      en: "In Netherrealm stages, +6% chance for Cages of Original Sin to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +6% \u6982\u7387\u751F\u957F\u7740\u68A6\u5883\u7761\u83B2": {
+      en: "+6% chance for Dream Lotuses to be growing in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +6% \u6982\u7387\u505C\u653E\u7740\u9AD8\u5854\u8FD0\u8F93\u8F66": {
+      en: "+6% chance for a TOWER Transport Vehicle to be parked in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D +6% \u6982\u7387\u6B63\u5728\u6ECB\u751F\u6076\u6B32": {
+      en: "+6% chance for Malice to be accumulating in Netherrealm stages"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C+1% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, +1% Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C+10% \u6982\u7387\u5728\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u6BCF\u5230\u8FBE\u65B0\u7684\u4E00\u5C42\uFF0C\u989D\u5916\u751F\u6210\u4E00\u53EA\u8BD5\u70BC\u602A\u7269": {
+      en: "In Netherrealm stages, +10% chance for an additional Trial monster to spawn each time a new level is reached during the Trial: God of Might"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C+2% \u6982\u7387\u5728\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u6BCF\u5230\u8FBE\u65B0\u7684\u4E00\u5C42\uFF0C\u989D\u5916\u751F\u6210\u4E00\u53EA\u8BD5\u70BC\u602A\u7269": {
+      en: "In Netherrealm stages, +2% chance for an additional Trial monster to spawn each time a new level is reached during the Trial: God of Might"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C+28% \u6982\u7387\u5728\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u6BCF\u5230\u8FBE\u65B0\u7684\u4E00\u5C42\uFF0C\u989D\u5916\u751F\u6210\u4E00\u53EA\u8BD5\u70BC\u602A\u7269": {
+      en: "In Netherrealm stages, +28% chance for an additional Trial monster to spawn each time a new level is reached during the Trial: God of Might"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u88AB\u9ED1\u6F6E\u4FB5\u8680\u7684\u602A\u7269\u63D0\u4F9B\u7684\u4FB5\u8680\u80FD\u91CF +10%": {
+      en: "In Netherrealm stages, monsters eroded by Dark Surge provide +10% Erosion Energy"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u88AB\u9ED1\u6F6E\u4FB5\u8680\u7684\u602A\u7269\u63D0\u4F9B\u7684\u4FB5\u8680\u80FD\u91CF +3%": {
+      en: "In Netherrealm stages, monsters eroded by Dark Surge provide +3% Erosion Energy"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u88AB\u9ED1\u6F6E\u4FB5\u8680\u7684\u602A\u7269\u63D0\u4F9B\u7684\u4FB5\u8680\u80FD\u91CF +40%": {
+      en: "In Netherrealm stages, monsters eroded by Dark Surge provide +40% Erosion Energy"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u88AB\u9ED1\u6F6E\u4FB5\u8680\u7684\u602A\u7269\u63D0\u4F9B\u7684\u4FB5\u8680\u80FD\u91CF\u5927\u5E45\u964D\u4F4E": {
+      en: "In Netherrealm stages, monsters eroded by Dark Surge provide significantly less Erosion Energy"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u7B2C\u4E00\u53EA\u53D7\u5230\u73A9\u5BB6\u4F24\u5BB3\u7684\u7A00\u6709\u602A\u7269\u5C06\u83B7\u5F97\u8D50\u798F\uFF0C\u5B83\u6709 6%\u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u7F57\u76D8": {
+      en: "In Netherrealm stages, the first Rare monster that takes damage from the player will have a blessing that gives it a 6% chance to drop 1 additional Compass(es)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u521D\u706B\u7075\u7802\u6709 2% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Flame Sand dropped has a 2% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u521D\u706B\u7075\u7802\u6709 8% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Flame Sand dropped has a 8% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7070\u70EC\u6709 2% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Embers dropped have a 2% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7070\u70EC\u6709 8% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Embers dropped have a 8% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u5927\u4EA8\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Sandlord Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u53E0\u754C\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Overrealm Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u602A\u8C08\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Folklore Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u9ED1\u6F6E\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Dark Surge Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u9ED1\u5E06\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Blacksail Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u753B\u96EA\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Frozen Canvas Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u7070\u70EC\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Ember Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u673A\u68B0\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Mechanical Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u52AB\u63A0\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Raid Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u7CBE\u5175\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Veteran Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u5DE8\u529B\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Might Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u68A6\u9B47\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Nightmare Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u8FF7\u57CE\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Aeterna Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u9B54\u65B9\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Cube Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u58EB\u5352\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Soldier Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u9996\u9886\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Boss Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u72E9\u730E\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Hunting Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u5854\u7F57\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Arcana Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u901A\u7F09\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Outlaw Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u6B66\u88C5\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be War Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u4FE1\u6807\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Beacon Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u8367\u5149\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Fluorescent Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u73CD\u5947\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Novel Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u66F4\u53EF\u80FD\u662F\u5F81\u6218\u7F57\u76D8": {
+      en: "In Netherrealm stages, Compasses dropped are more likely to be Militant Compasses"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u6709 1% \u6982\u7387\u53D8\u4E3A\u6700\u9AD8\u4EF7\u503C\u7684\u7C7B\u578B": {
+      en: "In Netherrealm stages, Compasses dropped have a 1% chance to become the most valuable type of Compass"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u6709 2% \u6982\u7387\u53D8\u4E3A\u66F4\u9AD8\u4EF7\u503C\u7684\u7C7B\u578B": {
+      en: "In Netherrealm stages, Compasses dropped have a 2% chance to become a more valuable type of Compass"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u6709 3% \u6982\u7387\u53D8\u4E3A\u66F4\u9AD8\u4EF7\u503C\u7684\u7C7B\u578B": {
+      en: "In Netherrealm stages, Compasses dropped have a 3% chance to become a more valuable type of Compass"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7F57\u76D8\u6709 5% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Compasses dropped have a 5% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u80FD\u91CF\u6838\u5FC3\u6709 2% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Energy Cores dropped have a 2% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u80FD\u91CF\u6838\u5FC3\u6709 5% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Energy Cores dropped have a 5% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u7A00\u6709\u88C5\u5907\u6709 5% \u6982\u7387\u53D8\u4E3A\u521D\u706B\u7075\u7802": {
+      en: "In Netherrealm stages, Rare gear dropped has a 5% chance to become Flame Sand"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u4FE1\u6807\u66F4\u6709\u53EF\u80FD\u4E3A\u51B0\u5C01\u5BD2\u6E0A\u7684\u4FE1\u6807": {
+      en: "In Netherrealm stages, Beacons dropped are more likely to be Glacial Abyss Beacons"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u4FE1\u6807\u66F4\u6709\u53EF\u80FD\u4E3A\u6CB8\u6D8C\u708E\u6D77\u7684\u4FE1\u6807": {
+      en: "In Netherrealm stages, Beacons dropped are more likely to be Blistering Lava Sea Beacons"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u4FE1\u6807\u66F4\u6709\u53EF\u80FD\u4E3A\u94A2\u94C1\u70BC\u955C\u7684\u4FE1\u6807": {
+      en: "In Netherrealm stages, Beacons dropped are more likely to be Steel Forge Beacons"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u4FE1\u6807\u66F4\u6709\u53EF\u80FD\u4E3A\u96F7\u9E23\u5E9F\u571F\u7684\u4FE1\u6807": {
+      en: "In Netherrealm stages, Beacons dropped are more likely to be Thunder Wastes Beacons"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u4FE1\u6807\u66F4\u6709\u53EF\u80FD\u4E3A\u5E7D\u591C\u6697\u57DF\u7684\u4FE1\u6807": {
+      en: "In Netherrealm stages, Beacons dropped are more likely to be Voidlands Beacons"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u4FE1\u6807\u6709 1% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, dropped Beacons have a 1% chance to duplicate"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u4FE1\u6807\u6709 16% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, dropped Beacons have a 16% chance to duplicate"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u96EA\u7EB8\u788E\u7247\u6709 1% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Snowpaper Fragments dropped have a 1% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u9057\u5FD8\u4E4B\u6C34\u6709 12% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Elixir of Oblivion dropped has a 12% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u9057\u5FD8\u4E4B\u6C34\u6709 40% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Elixir of Oblivion dropped has a 40% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u5F02\u754C\u56DE\u54CD\u548C\u6DF1\u7A7A\u56DE\u54CD\u6709 15% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Netherrealm Resonances and Deep Space Resonances dropped have a 15% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u5F02\u754C\u56DE\u54CD\u548C\u6DF1\u7A7A\u56DE\u54CD\u6709 6% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Netherrealm Resonances and Deep Space Resonances dropped have a 6% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u5F02\u754C\u56DE\u54CD\u6709 3% \u6982\u7387\u53D8\u4E3A\u6DF1\u7A7A\u56DE\u54CD": {
+      en: "In Netherrealm stages, Netherrealm Resonances dropped have a 3% chance to become Deep Space Resonances"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u5F02\u754C\u56DE\u54CD\u6709 90% \u6982\u7387\u53D8\u4E3A\u521D\u706B\u7075\u7802": {
+      en: "In Netherrealm stages, Netherrealm Resonances dropped have a 90% chance to become Flame Sand"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7684\u5F02\u9B54\u4E4B\u6838\u6709 2% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Aemberon Cores dropped have a 2% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6389\u843D\u7F57\u76D8\u65F6\uFF0C\u6709 0.4% \u6982\u7387\u540C\u65F6\u6389\u843D 1 \u679A\u660E\u65E5\u7684\u822A\u5411": {
+      en: "In Netherrealm stages, there is a 0.4% chance for Compasses to drop with 1 Tomorrow's Direction(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u989D\u5916 +1.4% \u7F57\u76D8\u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, +1.4% additional Compass Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u5316\u8EAB \u989D\u5916 +2% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Malice Incarnations have +2% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u5316\u8EAB \u989D\u5916 +6% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Malice Incarnations have +6% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u5316\u8EAB\u989D\u5916 -30% \u6B32\u5FF5\u7ED3\u6676\u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Malice Incarnations have -30% additional Desire Crystal Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u5316\u8EAB\u6709 8% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u7EC4\u6B32\u5FF5\u7ED3\u6676": {
+      en: "In Netherrealm stages, Malice Incarnations have an 8% chance to drop 1 additional stack of Desire Crystals"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u9B54\u65B9\u7684\u72C2\u60F3\u6B21\u6570 +1": {
+      en: "In Netherrealm stages, Malice Cube Fantasize count +1"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u9B54\u65B9\u6E34\u6C42\u5230 SSR \u548C UR \u5956\u52B1\u7684\u6982\u7387\u63D0\u9AD8 10%": {
+      en: "In Netherrealm stages, the chance of Malice Cube Crave resulting in SSR and UR rewards is increased by 10%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u9B54\u65B9\u6E34\u6C42\u5230\u6781\u6B32\u9B54\u65B9\u7684\u6982\u7387\u63D0\u9AD8 13%": {
+      en: "In Netherrealm stages, the chance of Malice Cube Crave resulting in Desire Cube is increased by 13%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u9B54\u65B9\u6E34\u6C42\u5230\u6781\u6B32\u9B54\u65B9\u7684\u6982\u7387\u63D0\u9AD8 5%": {
+      en: "In Netherrealm stages, the chance of Malice Cube Crave resulting in Desire Cube is increased by 5%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u9B54\u65B9\u5728\u6E34\u6C42\u65F6\u6709 10% \u6982\u7387\u4F7F\u6D88\u8017\u7684\u6B32\u5FF5\u7ED3\u6676\u51CF\u5C11 5 \u679A": {
+      en: "In Netherrealm stages, the Malice Cube has a 10% chance to reduce Desire Crystal consumption by 5 when Craving"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u9B54\u65B9\u5728\u6E34\u6C42\u65F6\u6709 2.5% \u6982\u7387\u4F7F\u6D88\u8017\u7684\u6B32\u5FF5\u7ED3\u6676\u51CF\u5C11 5 \u679A": {
+      en: "In Netherrealm stages, the Malice Cube has a 2.5% chance to reduce Desire Crystal consumption by 5 when Craving"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6076\u6B32\u9B54\u65B9\u5728\u6E34\u6C42\u65F6\u6709 6% \u6982\u7387\u4E0D\u6D88\u8017\u6B32\u5FF5\u7ED3\u6676": {
+      en: "In Netherrealm stages, the Malice Cube has a 6% chance to not consume Desire Crystals when Craving"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9AD8\u5854\u7269\u8D44\u7BB1\u6389\u843D\u7684\u73CD\u54C1\u6B66\u5668\u6709 1% \u6982\u7387\u5E26\u6709\u9AD8\u7EA7\u5E8F\u5217": {
+      en: "In Netherrealm stages, Precious weapons dropped from TOWER Supply Boxes have a 1% chance to have Advanced Sequence"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u55B7\u53D1\u7684\u5956\u52B1\u7C7B\u578B\u66F4\u53EF\u80FD\u662F\u4F20\u5947\u88C5\u5907": {
+      en: "In Netherrealm stages, Dark Surge Eruption rewards are more likely to be Legendary gear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u55B7\u53D1\u7684\u5956\u52B1\u7C7B\u578B\u66F4\u53EF\u80FD\u662F\u9996\u9886\u5956\u52B1": {
+      en: "In Netherrealm stages, Dark Surge Eruption rewards are more likely to be Boss rewards"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u55B7\u53D1\u5956\u52B1\u602A\u7269\u4E0D\u4F1A\u6389\u843D\u975E\u4F20\u5947\u88C5\u5907": {
+      en: "In Netherrealm stages, Dark Surge Eruption reward monsters will not drop non-Legendary gear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u55B7\u53D1\u5956\u52B1\u602A\u7269\u6389\u843D\u81F3\u81FB\u4F20\u5947\u88C5\u5907\u7684\u6982\u7387\u63D0\u9AD8 430%": {
+      en: "In Netherrealm stages, the chance for Dark Surge Eruption reward monsters to drop Exquisite Legendary gear is increased by 430%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u55B7\u53D1\u6709 8% \u6982\u7387\u53EA\u6D88\u8017\u4E00\u534A\u7684\u4FB5\u8680\u80FD\u91CF": {
+      en: "In Netherrealm stages, Dark Surge Eruption has an 8% chance to consume only half of the Erosion Energy"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u4FB5\u8680\u9996\u9886\u6389\u843D\u7684\u9ED1\u6F6E\u6555\u4EE4\u66F4\u53EF\u80FD\u662F\u6555\u4EE4:\u8FBE\u63D0": {
+      en: "In Netherrealm stages, Dark Surge Decrees dropped by Dark Surge-eroded bosses are more likely to be Decree: Dati"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u4FB5\u8680\u9996\u9886\u6389\u843D\u7684\u9ED1\u6F6E\u6555\u4EE4\u66F4\u53EF\u80FD\u662F\u6555\u4EE4:\u8FEA\u6C83": {
+      en: "In Netherrealm stages, Dark Surge Decrees dropped by Dark Surge-eroded bosses are more likely to be Decree: Divo"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u4FB5\u8680\u9996\u9886\u6389\u843D\u7684\u9ED1\u6F6E\u6555\u4EE4\u66F4\u53EF\u80FD\u662F\u6555\u4EE4:\u675C\u59C6": {
+      en: "In Netherrealm stages, Dark Surge Decrees dropped by Dark Surge-eroded bosses are more likely to be Decree: Doom"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u4FB5\u8680\u9996\u9886\u6389\u843D\u7684\u9ED1\u6F6E\u6555\u4EE4\u66F4\u53EF\u80FD\u662F\u6555\u4EE4:\u9C81\u56E0": {
+      en: "In Netherrealm stages, Dark Surge Decrees dropped by Dark Surge-eroded bosses are more likely to be Decree: Ruin"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u4FB5\u8680\u9996\u9886\u6389\u843D\u88C5\u5907\u6709 1% \u6982\u7387\u53D8\u4E3A\u5F02\u9B54\u4E4B\u6838": {
+      en: "In Netherrealm stages, gear dropped by Dark Surge-eroded bosses has a 1% chance to become an Aemberon Core"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u4FB5\u8680\u9996\u9886\u6709 3% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u9ED1\u6F6E\u6555\u4EE4": {
+      en: "In Netherrealm stages, Dark Surge-eroded bosses have a 3% chance to drop 1 additional Dark Surge Decree"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9ED1\u6F6E\u81F3\u591A\u55B7\u53D1 9 \u6B21": {
+      en: "In Netherrealm stages, Dark Surge can erupt at most 9 times"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u51FB\u8D25\u4FF1\u4E50\u90E8\u6E38\u620F\u4E2D\u7684\u602A\u7269\u83B7\u5F97\u7684\u65F6\u95F4 -16%": {
+      en: "In Netherrealm stages, time gained from defeating monsters in Clockwork Ballet Games -16%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u795E\u50CF\u53EA\u80FD\u627F\u53D7 2 \u70B9\u4F24\u5BB3": {
+      en: "In Netherrealm stages, the Mechanical Statue can only sustain 2 points of damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC +1% \u6982\u7387\u989D\u5916\u589E\u52A0\u4E00\u8F6E\u8FDB\u653B\u56DE\u5408": {
+      en: "In Netherrealm stages, Trial: God of Machines has +1% chance to add an additional attack round"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC +4% \u6982\u7387\u989D\u5916\u589E\u52A0\u4E00\u8F6E\u8FDB\u653B\u56DE\u5408": {
+      en: "In Netherrealm stages, Trial: God of Machines has +4% chance to add an additional attack round"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u6389\u843D\u7684\u975E\u4F20\u5947\u88C5\u5907\u4E3A\u73CD\u54C1\u7684\u6982\u7387\u63D0\u5347 100%": {
+      en: "In Netherrealm stages, non-Legendary gear dropped from Trial: God of Machines has a 100% increased chance to be Precious"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u6389\u843D\u7684\u9970\u54C1\u4E2D\u5C06\u4E0D\u518D\u5305\u542B\u6212\u6307": {
+      en: "In Netherrealm stages, accessories dropped from Trial: God of Machines will no longer include Rings"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u6389\u843D\u7684\u9970\u54C1\u4E2D\u5C06\u4E0D\u518D\u5305\u542B\u7075\u6212": {
+      en: "In Netherrealm stages, accessories dropped from Trial: God of Machines will no longer include Spirit Rings"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u6389\u843D\u975E\u4F20\u5947\u9970\u54C1\u7684\u6982\u7387 +10%": {
+      en: "In Netherrealm stages, Trial: God of Machines has +10% chance to drop non-Legendary accessories"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 -100% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Machines has -100% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 +5% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Machines has +5% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 +6% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Machines has +6% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u7684\u6570\u91CF +0.6%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monster count +0.6%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u7684\u6570\u91CF +2%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monster count +2%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u7684\u79FB\u52A8\u901F\u5EA6 +20%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monsters have +20% Movement Speed"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -17%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monsters take -17% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -20%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monsters take -20% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -40%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monsters take -40% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 +15%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monsters take +15% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 +20%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monsters take +20% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u63D0\u4F9B\u7684\u5956\u52B1\u8FDB\u5EA6 +0.6%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monsters provide +0.6% reward progress"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u8FDB\u653B\u602A\u7269\u63D0\u4F9B\u7684\u5956\u52B1\u8FDB\u5EA6 +2%": {
+      en: "In Netherrealm stages, Trial: God of Machines attacking monsters provide +2% reward progress"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u4E2D\uFF0C\u6BCF\u6CE2\u602A\u7269\u7684\u8FDB\u653B\u95F4\u9694\u964D\u4F4E\u81F3 1 \u79D2": {
+      en: "In Netherrealm stages, during Trial: God of Machines, the attack interval between each wave of monsters is reduced to 1 second"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u4E2D\uFF0C\u6BCF\u6CE2\u602A\u7269\u7684\u8FDB\u653B\u95F4\u9694\u964D\u4F4E\u81F3 3 \u79D2": {
+      en: "In Netherrealm stages, during Trial: God of Machines, the attack interval between each wave of monsters is reduced to 3 seconds"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u4E2D\uFF0C\u6BCF\u56DE\u5408\u90FD\u4F1A\u9646\u7EED\u51FA\u73B0 2 \u652F\u65E0\u4EBA\u673A\u68AF\u961F\u5BF9\u795E\u50CF\u53D1\u8D77\u56F4\u653B": {
+      en: "In Netherrealm stages, during Trial: God of Machines, 2 Drone Squadrons will successively appear each round to siege the Statue"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u4E2D\uFF0C\u6BCF\u56DE\u5408\u989D\u5916\u51FA\u73B0 2 \u652F\u65E0\u4EBA\u673A\u68AF\u961F": {
+      en: "In Netherrealm stages, during Trial: God of Machines, 2 additional Drone Squadrons appear each round"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u4E2D\uFF0C\u6BCF\u56DE\u5408\u989D\u5916\u51FA\u73B0\u82E5\u5E72\u652F\u65E0\u4EBA\u673A\u68AF\u961F\uFF0C\u652F\u6570\u4E3A\u56DE\u5408\u6570\u7684\u4E24\u500D": {
+      en: "In Netherrealm stages, during Trial: God of Machines, additional Drone Squadrons appear each round, with the number being twice the round number"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u4E2D\uFF0C\u65E0\u4EBA\u673A\u989D\u5916 +25% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, during Trial: God of Machines, Drones have +25% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u4E2D\uFF0C\u65E0\u4EBA\u673A\u989D\u5916 +40% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, during Trial: God of Machines, Drones have +40% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5C06\u9F7F\u8F6E\u5956\u5238\u6295\u5165\u4FF1\u4E50\u90E8\u9886\u5956\u53F0\u65F6\uFF0C\u53EF\u4EE5\u63D0\u5347 1 \u7EA7\u8BC4\u7EA7": {
+      en: "In Netherrealm stages, when inserting a Gear Ticket into the Clockwork Ballet Prize Podium, rating can be increased by 1 level"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5C06\u9F7F\u8F6E\u5956\u5238\u6295\u5165\u4FF1\u4E50\u90E8\u9886\u5956\u53F0\u65F6\uFF0C\u82E5\u5269\u4F59\u65F6\u95F4\u5927\u4E8E 60 \u79D2\uFF0C\u5219\u6709 100% \u6982\u7387\u4F7F\u6700\u7EC8\u5956\u52B1 +10% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, when inserting a Gear Ticket into the Clockwork Ballet Prize Podium, if remaining time is greater than 60 seconds, there is a 100% chance for final rewards to have +10% Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5C06\u9F7F\u8F6E\u5956\u5238\u6295\u5165\u4FF1\u4E50\u90E8\u9886\u5956\u53F0\u65F6\uFF0C\u82E5\u5269\u4F59\u65F6\u95F4\u5927\u4E8E 60 \u79D2\uFF0C\u5219\u6709 3% \u6982\u7387\u989D\u5916\u83B7\u5F97 1 \u679A\u6A59\u8272\u53CA\u4EE5\u4E0A\u7684\u9F7F\u8F6E\u5956\u5238": {
+      en: "In Netherrealm stages, when inserting a Gear Ticket into the Clockwork Ballet Prize Podium, if remaining time is greater than 60 seconds, there is a 3% chance to receive 1 additional Orange or higher Gear Ticket"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5C06\u9F7F\u8F6E\u5956\u5238\u6295\u5165\u4FF1\u4E50\u90E8\u9886\u5956\u53F0\u65F6\uFF0C\u82E5\u5269\u4F59\u65F6\u95F4\u5C0F\u4E8E 40 \u79D2\uFF0C\u5219\u6709 10% \u6982\u7387\u989D\u5916\u83B7\u5F97 1 \u679A\u6A59\u8272\u53CA\u4EE5\u4E0A\u7684\u9F7F\u8F6E\u5956\u5238": {
+      en: "In Netherrealm stages, when inserting a Gear Ticket into the Clockwork Ballet Prize Podium, if remaining time is less than 40 seconds, there is a 10% chance to receive 1 additional Orange or higher Gear Ticket"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5C06\u9F7F\u8F6E\u5956\u5238\u6295\u5165\u4FF1\u4E50\u90E8\u9886\u5956\u53F0\u65F6\uFF0C\u82E5\u5269\u4F59\u65F6\u95F4\u5C0F\u4E8E 40 \u79D2\uFF0C\u5219\u6709 100% \u6982\u7387\u4F7F\u6700\u7EC8\u5956\u52B1 +30% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, when inserting a Gear Ticket into the Clockwork Ballet Prize Podium, if remaining time is less than 40 seconds, there is a 100% chance for final rewards to have +30% Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5C06\u9F7F\u8F6E\u5956\u5238\u6295\u5165\u4FF1\u4E50\u90E8\u9886\u5956\u53F0\u65F6\uFF0C\u6709 13% \u6982\u7387\u989D\u5916\u83B7\u5F97 1 \u4E2A\u9F7F\u8F6E\u5956\u5238": {
+      en: "In Netherrealm stages, when inserting a Gear Ticket into the Clockwork Ballet Prize Podium, there is a 13% chance to receive 1 additional Gear Ticket"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u7684\u5E78\u8FD0\u7269\u8D44\u89E6\u53D1\u65F6\uFF0C\u6709 10% \u6982\u7387\u989D\u5916\u89E6\u53D1 1 \u6B21": {
+      en: "In Netherrealm stages, when Lucky Supplies trigger during the Hijacking Operation, there is a 10% chance to trigger an additional time"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6": {
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Components"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6-\u8FD1\u536B": {
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Component - Guard"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6-\u72D9\u51FB": {
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Component - Sniper"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6-\u672F\u58EB": {
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Component - Sorcerer"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u52AB\u8F66\u884C\u52A8\u4E2D\u6389\u843D\u7684\u5143\u4EF6\u66F4\u53EF\u80FD\u662F\u62D3\u5C55\u5143\u4EF6-\u91CD\u88C5": {
+      en: "In Netherrealm stages, Components dropped during Hijacking Operations are more likely to be Expansion Component - Heavy"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC +1% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Might has +1% Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u7684\u5C42\u6570\u8FBE\u5230 3 \u7684\u500D\u6570\u65F6\uFF0C\u989D\u5916\u751F\u6210\u4E00\u53EA\u77EE\u4EBA\u673A\u7532": {
+      en: "In Netherrealm stages, when the Trial: God of Might level reaches a multiple of 3, an additional Dwarven Mech is spawned"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u7684\u5C42\u6570\u8FBE\u5230 5 \u7684\u500D\u6570\u65F6\uFF0C\u989D\u5916\u751F\u6210\u4E00\u53EA\u77EE\u4EBA\u673A\u7532": {
+      en: "In Netherrealm stages, when the Trial: God of Might level reaches a multiple of 5, an additional Dwarven Mech is spawned"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u7684\u5C42\u6570\u4E0A\u9650 +1": {
+      en: "In Netherrealm stages, Trial: God of Might maximum level +1"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u7684\u5C42\u6570\u4E0A\u9650 +3": {
+      en: "In Netherrealm stages, Trial: God of Might maximum level +3"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u7684\u4F24\u5BB3\u5730\u9762\u989D\u5916 +30% \u4F24\u5BB3": {
+      en: "In Netherrealm stages, Trial: God of Might damaging ground has +30% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u7684\u4F24\u5BB3\u5730\u9762\u989D\u5916 +50% \u4F24\u5BB3": {
+      en: "In Netherrealm stages, Trial: God of Might damaging ground has +50% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u7684\u4F24\u5BB3\u5730\u9762\u8303\u56F4\u5927\u5E45\u63D0\u9AD8": {
+      en: "In Netherrealm stages, Trial: God of Might damaging ground area is significantly increased"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u7684\u4F24\u5BB3\u5730\u9762\u8303\u56F4\u63D0\u9AD8": {
+      en: "In Netherrealm stages, Trial: God of Might damaging ground area is increased"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u6389\u843D\u7684\u7070\u70EC\u6709 0.1% \u6982\u7387\u53D8\u4E3A\u81F3\u81FB\u7070\u70EC": {
+      en: "In Netherrealm stages, Embers dropped from Trial: God of Might have a 0.1% chance to become Exquisite Embers"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u6389\u843D\u7684\u7070\u70EC\u6709 15% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Embers dropped from Trial: God of Might have a 15% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u6389\u843D\u7684\u7070\u70EC\u6709 3.5% \u6982\u7387\u53D8\u4E3A\u81F3\u81FB\u7070\u70EC": {
+      en: "In Netherrealm stages, Embers dropped from Trial: God of Might have a 3.5% chance to become Exquisite Embers"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u6389\u843D\u7684\u7070\u70EC\u6709 35% \u6982\u7387\u590D\u5236 1 \u4EFD": {
+      en: "In Netherrealm stages, Embers dropped from Trial: God of Might have a 35% chance to be replicated once"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u6389\u843D\u7684\u81F3\u81FB\u7070\u70EC\u53D8\u4E3A\u521D\u706B\u7075\u7802": {
+      en: "In Netherrealm stages, Exquisite Embers dropped from Trial: God of Might become Flame Sand"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 -100% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Might has -100% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 -75% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Might has -75% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 +1% \u7070\u70EC\u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Might has +1% additional Ember Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 +140% \u7070\u70EC\u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Might has +140% additional Ember Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 +3% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Might has +3% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 +4% \u7070\u70EC\u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Might has +4% additional Ember Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 +9% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Trial: God of Might has +9% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u77EE\u4EBA\u673A\u7532 +50% \u6389\u843D\u7A00\u6709\u5EA6": {
+      en: "In Netherrealm stages, during Trial: God of Might, Dwarven Mechs have +50% Drop Rarity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u77EE\u4EBA\u673A\u7532\u989D\u5916 +10% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, during Trial: God of Might, Dwarven Mechs have +10% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u77EE\u4EBA\u673A\u7532\u989D\u5916 +5% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, during Trial: God of Might, Dwarven Mechs have +5% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u6BCF\u8FBE\u5230\u65B0\u7684\u4E00\u5C42\uFF0C\u77EE\u4EBA\u673A\u7532\u5728\u8BD5\u70BC\u8303\u56F4\u5185\u989D\u5916 +4% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, during Trial: God of Might, each time a new level is reached, Dwarven Mechs within the Trial area have +4% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u6BCF\u8FBE\u5230\u65B0\u7684\u4E00\u5C42\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 +4% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, during Trial: God of Might, each time a new level is reached, the Trial has +4% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u6BCF\u8FBE\u5230\u65B0\u7684\u4E00\u5C42\uFF0C\u73A9\u5BB6\u5728\u8BD5\u70BC\u8303\u56F4\u5185\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 +5%": {
+      en: "In Netherrealm stages, during Trial: God of Might, each time a new level is reached, the player takes +5% additional damage within the Trial area"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u6BCF\u5230\u8FBE\u65B0\u7684\u4E00\u5C42\uFF0C\u989D\u5916\u751F\u6210\u4E00\u53EA\u8BD5\u70BC\u602A\u7269": {
+      en: "In Netherrealm stages, during Trial: God of Might, each time a new level is reached, an additional Trial monster is spawned"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u8BD5\u70BC\u602A\u7269\u83B7\u5F97\u6781\u5DE8\u5316": {
+      en: "In Netherrealm stages, during Trial: God of Might, Trial monsters gain Giantism"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u8BD5\u70BC\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -10%": {
+      en: "In Netherrealm stages, during Trial: God of Might, Trial monsters take -10% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u8BD5\u70BC\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -30%": {
+      en: "In Netherrealm stages, during Trial: God of Might, Trial monsters take -30% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u671F\u95F4\uFF0C\u8BD5\u70BC\u602A\u7269\u6709 4% \u6982\u7387\u53D8\u4E3A\u77EE\u4EBA\u673A\u7532": {
+      en: "In Netherrealm stages, during Trial: God of Might, Trial monsters have a 4% chance to become Dwarven Mechs"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5DE8\u529B\u4E4B\u795E\u8BD5\u70BC\u65E0\u6CD5\u751F\u6210\u77EE\u4EBA\u673A\u7532": {
+      en: "In Netherrealm stages, Trial: God of Might cannot spawn Dwarven Mechs"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7684 SSS \u8BC4\u7EA7\u989D\u5916\u63D0\u4F9B +18% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Clockwork Ballet Games SSS rating provides +18% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7684\u521D\u59CB\u9F7F\u8F6E\u6570\u91CF +1": {
+      en: "In Netherrealm stages, Clockwork Ballet Games initial Gear count +1"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7684\u521D\u59CB\u8BC4\u7EA7\u8BBE\u7F6E\u4E3A E": {
+      en: "In Netherrealm stages, Clockwork Ballet Games initial rating is set to E"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7684\u521D\u59CB\u65F6\u95F4 +3 \u79D2": {
+      en: "In Netherrealm stages, Clockwork Ballet Games initial time +3 seconds"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7684\u9EC4\u91D1\u4F1A\u5458\u670D\u52A1\u51FA\u73B0\u6982\u7387 +15%": {
+      en: "In Netherrealm stages, Clockwork Ballet Games Gold Member Service appearance chance +15%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7684\u8BC4\u7EA7\u6548\u679C\u5C06\u5BF9\u5168\u57DF\u5185\u7684\u6240\u6709\u602A\u7269\u751F\u6548\uFF0C\u5168\u57DF\u6218\u6597\u96BE\u5EA6\u4E0E\u6389\u843D\u5956\u52B1\u90FD\u4F1A\u76F8\u5E94\u63D0\u5347": {
+      en: "In Netherrealm stages, Clockwork Ballet Games rating effects will apply to all monsters in the entire area, with combat difficulty and drop rewards increasing accordingly"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7684\u7D2B\u8272\u53CA\u4EE5\u4E0A\u9F7F\u8F6E\u51FA\u73B0\u6982\u7387 +3%": {
+      en: "In Netherrealm stages, Clockwork Ballet Games Purple and higher Gear appearance chance +3%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7684\u7D2B\u8272\u53CA\u4EE5\u4E0A\u9F7F\u8F6E\u51FA\u73B0\u6982\u7387 +9%": {
+      en: "In Netherrealm stages, Clockwork Ballet Games Purple and higher Gear appearance chance +9%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7684\u94BB\u77F3\u4F1A\u5458\u670D\u52A1\u51FA\u73B0\u6982\u7387 +15%": {
+      en: "In Netherrealm stages, Clockwork Ballet Games Diamond Member Service appearance chance +15%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u7ED3\u675F\u540E\uFF0C\u8165\u7EA2\u739B\u4E3D\u6709 3% \u6982\u7387\u4E0D\u6D88\u5931\uFF0C\u5E76\u89E3\u9664\u65E0\u654C\u72B6\u6001": {
+      en: "In Netherrealm stages, after Clockwork Ballet Games end, Bloody Mary has a 3% chance to not disappear and have invincibility removed"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u4E2D\u989D\u5916\u51FA\u73B0 1 \u4E2A\u52A0\u901F\u996E\u6599": {
+      en: "In Netherrealm stages, 1 additional Speed Drink appears in Clockwork Ballet Games"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u4FF1\u4E50\u90E8\u6E38\u620F\u4E2D\u989D\u5916\u51FA\u73B0 1 \u4E2A\u5EF6\u65F6\u6C99\u6F0F": {
+      en: "In Netherrealm stages, 1 additional Time Extension Hourglass appears in Clockwork Ballet Games"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5F00\u542F\u60AC\u8D4F\u5B9D\u7BB1\u65F6\u6709 5% \u6982\u7387\u989D\u5916\u6389\u843D\u9AD8\u5854\u7B79\u7801": {
+      en: "In Netherrealm stages, when opening Bounty Chests, there is a 5% chance to drop additional TOWER Chips"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5F00\u542F\u60AC\u8D4F\u8BA2\u5355\u540E\uFF0C\u6BCF\u51FB\u8D25\u4E00\u53EA\u62BC\u8FD0\u4FDD\u9556\uFF0C\u60AC\u8D4F\u8BA2\u5355\u7ED3\u675F\u540E\u5C31\u6709 +1% \u7684\u6982\u7387\u989D\u5916\u51FA\u73B0\u4E00\u4E2A\u60AC\u8D4F\u5B9D\u7BB1": {
+      en: "In Netherrealm stages, after activating a Bounty Order, for each Escort Guard defeated, there is +1% chance for an additional Bounty Chest to appear when the Bounty Order ends"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5F00\u542F\u60AC\u8D4F\u8BA2\u5355\u540E\uFF0C\u5168\u4F53\u5B89\u4FDD\u4EBA\u5458\u989D\u5916 +30% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, after activating a Bounty Order, all Security Staff have +30% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6E34\u6C42\u5230\u6781\u6B32\u9B54\u65B9\u65F6\uFF0C\u6709 1% \u6982\u7387\u989D\u5916\u83B7\u5F97 1 \u679A\u4F20\u5947\u795E\u683C\u77F3\u677F": {
+      en: "In Netherrealm stages, when Craving results in a Desire Cube, there is a 1% chance to receive 1 additional Legendary Divinity Slab"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6E34\u6C42\u5230\u6781\u6B32\u9B54\u65B9\u65F6\uFF0C\u6709 1% \u6982\u7387\u989D\u5916\u83B7\u5F97 1 \u679A\u6B32\u5FF5\u539F\u6838": {
+      en: "In Netherrealm stages, when Craving results in a Desire Cube, there is a 1% chance to receive 1 additional Desire Core"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6E34\u6C42\u5230\u6781\u6B32\u9B54\u65B9\u65F6\uFF0C\u6709 20% \u6982\u7387\u989D\u5916\u83B7\u5F97 1 \u679A\u6B32\u5FF5\u539F\u6838": {
+      en: "In Netherrealm stages, when Craving results in a Desire Cube, there is a 20% chance to receive 1 additional Desire Core"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6E34\u6C42\u5230\u6781\u6B32\u9B54\u65B9\u65F6\uFF0C\u6709 5% \u6982\u7387\u989D\u5916\u83B7\u5F97 1 \u679A\u5347\u534E\u4E4B\u6954\uFF08\u4F20\u5947\uFF09": {
+      en: "In Netherrealm stages, when Craving results in a Desire Cube, there is a 5% chance to receive 1 additional Ascension Wedge (Legendary)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6BCF\u6B21\u9ED1\u6F6E\u55B7\u53D1\u90FD\u4F1A\u4F7F\u73A9\u5BB6\u9020\u6210\u7684\u4F24\u5BB3\u989D\u5916 -10%": {
+      en: "In Netherrealm stages, each Dark Surge Eruption causes the player to deal -10% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6BCF\u6B21\u9ED1\u6F6E\u55B7\u53D1\u90FD\u4F1A\u4F7F\u73A9\u5BB6\u9020\u6210\u7684\u4F24\u5BB3\u989D\u5916 -2%": {
+      en: "In Netherrealm stages, each Dark Surge Eruption causes the player to deal -2% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6BCF\u6B21\u9ED1\u6F6E\u55B7\u53D1\u90FD\u4F1A\u4F7F\u73A9\u5BB6\u9020\u6210\u7684\u4F24\u5BB3\u989D\u5916 -5%": {
+      en: "In Netherrealm stages, each Dark Surge Eruption causes the player to deal -5% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6BCF\u5F53\u65B0\u56DE\u5408\u5F00\u59CB\uFF0C\u673A\u68B0\u4E4B\u795E\u8BD5\u70BC\u989D\u5916 +7% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, when a new round begins, Trial: God of Machines has +7% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6BCF\u51FB\u8D25 10 \u4E2A\u62BC\u8FD0\u4FDD\u9556\uFF0C\u5C31\u4F1A\u4F7F\u5168\u4F53\u5B89\u4FDD\u4EBA\u5458\u83B7\u5F97\u989D\u5916 +2% \u6389\u843D\u6570\u91CF\uFF0C\u4EE5\u53CA +3% \u79FB\u52A8\u901F\u5EA6": {
+      en: "In Netherrealm stages, for every 10 Escort Guards defeated, all Security Staff gain +2% additional Drop Quantity and +3% Movement Speed"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u6BCF\u53EA\u9ED1\u6F6E\u55B7\u53D1\u5956\u52B1\u602A\u7269\u6389\u843D\u7684\u4F20\u5947\u88C5\u5907\u6709 12% \u6982\u7387\u88AB\u81F3\u6697\u4FB5\u8680 1 \u4EF6": {
+      en: "In Netherrealm stages, Legendary gear dropped by each Dark Surge Eruption reward monster has a 12% chance to have 1 piece eroded by Umbra"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u7F8E\u68A6\u5F00\u59CB\u65F6\uFF0C\u68A6\u5883\u7761\u83B2\u65C1\u989D\u5916\u51FA\u73B0 2 \u53EA\u7CBE\u82F1\u7F8E\u68A6\u6E38\u6C11": {
+      en: "In Netherrealm stages, when Sweet Dream begins, 2 additional Elite Sweet Dream Wanderers appear near the Dream Lotus"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u68A6\u5883\u5C42\u6570\u4E0A\u9650\u5927\u4E8E 4 \u65F6\uFF0C\u5728\u7B2C 4 \u5C42\u68A6\u5883\u7684\u8FDB\u5165\u5669\u68A6\u6982\u7387 -20%": {
+      en: "In Netherrealm stages, when Dream level cap is greater than 4, the chance to enter Nightmare at Dream level 4 is -20%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u68A6\u5883\u5C42\u6570\u4E0A\u9650\u5927\u4E8E 5 \u65F6\uFF0C\u5728\u7B2C 5 \u5C42\u68A6\u5883\u7684\u8FDB\u5165\u5669\u68A6\u6982\u7387 -15%": {
+      en: "In Netherrealm stages, when Dream level cap is greater than 5, the chance to enter Nightmare at Dream level 5 is -15%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u68A6\u5883\u5C42\u6570\u4E0A\u9650\u5927\u4E8E 6 \u65F6\uFF0C\u5728\u7B2C 6 \u5C42\u68A6\u5883\u7684\u8FDB\u5165\u5669\u68A6\u6982\u7387 -5%": {
+      en: "In Netherrealm stages, when Dream level cap is greater than 6, the chance to enter Nightmare at Dream level 6 is -5%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u68A6\u5883\u5C42\u6570\u672A\u8FBE\u5230\u4E0A\u9650\u65F6\uFF0C\u8FDB\u5165\u5669\u68A6\u6982\u7387 -5%": {
+      en: "In Netherrealm stages, when Dream level has not reached the cap, the chance to enter Nightmare is -5%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9B54\u6CD5\u602A\u7269\u6709 0.01% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u4FE1\u6807": {
+      en: "In Netherrealm stages, Magic monsters have a 0.01% chance to drop 1 additional Beacon(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9B54\u6CD5\u602A\u7269\u6709 0.04% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u4FE1\u6807": {
+      en: "In Netherrealm stages, Magic monsters have a 0.04% chance to drop 1 additional Beacon(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5168\u4F53\u5B89\u4FDD\u4EBA\u5458\u989D\u5916 -70% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, all Security Staff have -70% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5168\u4F53\u5B89\u4FDD\u4EBA\u5458\u989D\u5916 +1% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, all Security Staff have +1% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5168\u4F53\u5B89\u4FDD\u4EBA\u5458\u989D\u5916 +23% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, all Security Staff have +23% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5168\u4F53\u5B89\u4FDD\u4EBA\u5458\u989D\u5916 +6% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, all Security Staff have +6% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5168\u4F53\u5B89\u4FDD\u4EBA\u5458\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -10%": {
+      en: "In Netherrealm stages, all Security Staff take -10% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5168\u4F53\u5B89\u4FDD\u4EBA\u5458\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -20%": {
+      en: "In Netherrealm stages, all Security Staff take -20% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u65F6\u523B8 \u53CA\u4EE5\u4E0A\u7684\u67D3\u8272\u96EA\u602A\u6709 1.5% \u6982\u7387\u989D\u5916\u6389\u843D1\u4E2A\u534E\u8D35\u8F85\u52A9\u6280\u80FD\uFF08\u8BCD\u7F00\u6700\u9AD8\u4E3AT2\uFF09": {
+      en: "In Netherrealm stages, at Timemark 8 and above, Dyed Snow Monsters have a 1.5% chance to drop 1 additional Exquisite Support Skill (affixes up to T2)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6389\u843D\u7684\u5F02\u754C\u56DE\u54CD\u6709 0.3% \u6982\u7387\u53D8\u4E3A\u4FE1\u6807": {
+      en: "In Netherrealm stages, Netherrealm Resonance dropped by bosses have a 0.3% chance to become Beacons"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u989D\u5916\u6389\u843D 1 \u7EC4\u96EA\u7EB8\u788E\u7247": {
+      en: "In Netherrealm stages, bosses will drop 1 additional set(s) of Snowpaper Fragments"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -50%": {
+      en: "In Netherrealm stages, bosses take -50% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 10% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u7070\u70EC": {
+      en: "In Netherrealm stages, bosses have a 10% chance to drop 1 additional Ember(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 10% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u9006\u8F6C\u53D1\u6761": {
+      en: "In Netherrealm stages, bosses have a 10% chance to drop 1 additional Winding Key(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 10% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u9057\u5FD8\u4E4B\u6C34": {
+      en: "In Netherrealm stages, bosses have a 10% chance to drop 1 additional Elixir(s) of Oblivion"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 2% \u6982\u7387\u83B7\u5F97\u6781\u5DE8\u5316\uFF0C\u5E76\u80FD\u989D\u5916\u6389\u843D 1 \u679A\u7F57\u76D8": {
+      en: "In Netherrealm stages, bosses have a 2% chance to gain Giantism and drop 1 additional Compass(es)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 3% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u9006\u8F6C\u53D1\u6761": {
+      en: "In Netherrealm stages, bosses have a 3% chance to drop 1 additional Winding Key(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 3% \u6982\u7387\u989D\u5916\u6389\u843D 1 \u679A\u4FE1\u6807": {
+      en: "In Netherrealm stages, bosses have a 3% chance to drop an additional Beacon"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 5% \u6982\u7387\u989D\u5916\u6389\u843D 20 \u679A\u5F02\u754C\u56DE\u54CD": {
+      en: "In Netherrealm stages, bosses have a 5% chance to drop 20 additional Netherrealm Resonance(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 5% \u6982\u7387\u989D\u5916\u6389\u843D 40 \u679A\u5F02\u754C\u56DE\u54CD": {
+      en: "In Netherrealm stages, bosses have a 5% chance to drop 40 additional Netherrealm Resonance(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 5% \u6982\u7387\u989D\u5916\u6389\u843D 5 \u679A\u5F02\u754C\u56DE\u54CD": {
+      en: "In Netherrealm stages, bosses have a 5% chance to drop 5 additional Netherrealm Resonance(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9996\u9886\u6709 50% \u6982\u7387\u989D\u5916\u6389\u843D 2 \u679A\u80FD\u91CF\u6838\u5FC3": {
+      en: "In Netherrealm stages, bosses have a 50% chance to drop 2 additional Energy Core(s)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5B8C\u6210\u4FF1\u4E50\u90E8\u6E38\u620F\u4E2D\u7684\u9F7F\u8F6E\u4F5C\u6218\u65F6\uFF0C\u83B7\u5F97\u7684\u65F6\u95F4 +1 \u79D2": {
+      en: "In Netherrealm stages, when completing Gear Combat in Clockwork Ballet Games, time gained +1 second"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5E78\u8FD0\u7269\u8D44\u7684\u51FA\u73B0\u6982\u7387\u63D0\u9AD8 30%": {
+      en: "In Netherrealm stages, Lucky Supplies appearance chance increased by 30%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u60AC\u8D4F\u8BA2\u5355 +11% \u6982\u7387\u989D\u5916\u63ED\u793A\u4E00\u4E2A\u60AC\u8D4F\u916C\u52B3": {
+      en: "In Netherrealm stages, Bounty Orders have +11% chance to reveal an additional Bounty Reward"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u60AC\u8D4F\u8BA2\u5355 +2% \u6982\u7387\u989D\u5916\u63ED\u793A\u4E00\u4E2A\u60AC\u8D4F\u916C\u52B3": {
+      en: "In Netherrealm stages, Bounty Orders have +2% chance to reveal an additional Bounty Reward"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u60AC\u8D4F\u8BA2\u5355 +60% \u6982\u7387\u989D\u5916\u63ED\u793A\u4E00\u4E2A\u60AC\u8D4F\u916C\u52B3": {
+      en: "In Netherrealm stages, Bounty Orders have +60% chance to reveal an additional Bounty Reward"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u60AC\u8D4F\u8BA2\u5355\u7684\u51FA\u73B0\u6982\u7387 +3%": {
+      en: "In Netherrealm stages, Bounty Order appearance chance +3%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u60AC\u8D4F\u8BA2\u5355\u53EF\u63ED\u793A\u7684\u60AC\u8D4F\u916C\u52B3\u81F3\u591A\u4E3A 1 \u4E2A": {
+      en: "In Netherrealm stages, Bounty Orders can reveal at most 1 Bounty Reward"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u9009\u62E9\u68A6\u5883\u5F81\u5146\u65F6\uFF0C\u6709 20% \u6982\u7387\u4F7F\u6240\u6709\u5669\u68A6\u5F81\u5146\u53D8\u4E3A\uFF1A\u989D\u5916 +20% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, when choosing Dream Omens, there is a 20% chance for all Nightmare Omens to become: +20% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u62BC\u8FD0\u4FDD\u9556\u5728\u9003\u79BB\u8FC7\u7A0B\u4E2D\u5C06\u4E0D\u518D\u6298\u8FD4": {
+      en: "In Netherrealm stages, Escort Guards will no longer turn back during their escape"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5F02\u754C\u539F\u751F\u9B54\u6CD5\u602A\u7269\u88AB\u51FB\u8D25\u65F6\u6709 0.03% \u6982\u7387\u5728\u9996\u9886\u533A\u57DF\u989D\u5916\u751F\u6210 1 \u4E2A\u4FE1\u6807\u5B9D\u7BB1": {
+      en: "In Netherrealm stages, when native Magic monsters are defeated, there is a 0.03% chance to spawn 1 additional Beacon Chest in the boss area"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5F02\u754C\u539F\u751F\u7A00\u6709\u602A\u7269\u6709 2.5% \u6982\u7387\u88AB\u66FF\u6362\u4E3A\u67D3\u8272\u96EA\u602A": {
+      en: "In Netherrealm stages, native Rare monsters have a 2.5% chance to be replaced with Dyed Snow Monsters"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u989D\u5916\u91CA\u653E 1 \u6B21\u602A\u7269": {
+      en: "In Netherrealm stages, Cage of Original Sin releases monsters 1 additional time"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u53CA\u5176\u91CA\u653E\u7684\u602A\u7269\u5F97\u5230\u52A0\u5F3A": {
+      en: "In Netherrealm stages, Cage of Original Sin and monsters released by it are strengthened"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u53CA\u5176\u91CA\u653E\u7684\u602A\u7269\u989D\u5916 +1% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Cage of Original Sin and monsters released by it have +1% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u53CA\u5176\u91CA\u653E\u7684\u602A\u7269\u989D\u5916 +13% \u795E\u5723\u5316\u77F3\u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Cage of Original Sin and monsters released by it have +13% additional Sacred Fossil Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u53CA\u5176\u91CA\u653E\u7684\u602A\u7269\u989D\u5916 +2% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Cage of Original Sin and monsters released by it have +2% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u53CA\u5176\u91CA\u653E\u7684\u602A\u7269\u989D\u5916 +5% \u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Cage of Original Sin and monsters released by it have +5% additional Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u53CA\u5176\u91CA\u653E\u7684\u602A\u7269\u989D\u5916 +6% \u7F57\u76D8\u6389\u843D\u6570\u91CF": {
+      en: "In Netherrealm stages, Cage of Original Sin and monsters released by it have +6% additional Compass Drop Quantity"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u53CA\u5176\u91CA\u653E\u7684\u602A\u7269\u83B7\u5F97\u6781\u5DE8\u5316": {
+      en: "In Netherrealm stages, Cage of Original Sin and monsters released by it gain Giantism"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u53CA\u5176\u91CA\u653E\u7684\u602A\u7269\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -30%": {
+      en: "In Netherrealm stages, Cage of Original Sin and monsters released by it take -30% additional damage"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u6BCF\u6B21\u91CA\u653E\u602A\u7269\u65F6\uFF0C\u4F1A\u4F7F\u539F\u7F6A\u56DA\u7B3C\u53CA\u5176\u91CA\u653E\u7684\u602A\u7269\u83B7\u5F97\u989D\u5916 +5% \u6389\u843D\u6570\u91CF\uFF0C\u4EE5\u53CA\u53D7\u5230\u7684\u4F24\u5BB3\u989D\u5916 -5%\uFF08\u8BE5\u6548\u679C\u4EC5\u5BF9\u5173\u5361\u5185\u521D\u59CB\u7684\u539F\u7F6A\u56DA\u7B3C\u751F\u6548\uFF09": {
+      en: "In Netherrealm stages, each time Cage of Original Sin releases monsters, Cage of Original Sin and monsters released by it gain +5% additional Drop Quantity and take -5% additional damage (this effect only applies to the initial Cage of Original Sin in the stage)"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u91CA\u653E\u7684\u602A\u7269\u7684\u653B\u51FB\u3001\u65BD\u6CD5\u548C\u79FB\u52A8\u901F\u5EA6 +50%": {
+      en: "In Netherrealm stages, monsters released by Cage of Original Sin have +50% Attack, Cast, and Movement Speed"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u91CA\u653E\u7684\u602A\u7269\u6709 +14% \u6982\u7387\u7ED3\u4F34\u51FA\u73B0": {
+      en: "In Netherrealm stages, monsters released by Cage of Original Sin have +14% chance to appear in pairs"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u539F\u7F6A\u56DA\u7B3C\u91CA\u653E\u7684\u602A\u7269\u6709 +5% \u6982\u7387\u7ED3\u4F34\u51FA\u73B0": {
+      en: "In Netherrealm stages, monsters released by Cage of Original Sin have +5% chance to appear in pairs"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5728\u4FF1\u4E50\u90E8\u6E38\u620F\u4E2D\u51FA\u73B0\u7F57\u76D8\u9F7F\u8F6E\u7684\u6982\u7387\u63D0\u9AD8 10%": {
+      en: "In Netherrealm stages, the chance for Compass Gears to appear in Clockwork Ballet Games is increased by 10%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5728\u4FF1\u4E50\u90E8\u6E38\u620F\u4E2D\u51FA\u73B0\u7F57\u76D8\u9F7F\u8F6E\u7684\u6982\u7387\u63D0\u9AD8 2%": {
+      en: "In Netherrealm stages, the chance for Compass Gears to appear in Clockwork Ballet Games is increased by 2%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5728\u4FF1\u4E50\u90E8\u6E38\u620F\u4E2D\u89E6\u78B0\u52A0\u901F\u996E\u6599\u65F6\uFF0C\u6709 24% \u6982\u7387\u51FA\u73B0\u4E00\u4E2A\u843D\u8DD1\u821E\u5A18": {
+      en: "In Netherrealm stages, when touching a Speed Drink in Clockwork Ballet Games, there is a 24% chance for a Runaway Dancer to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5728\u4FF1\u4E50\u90E8\u6E38\u620F\u4E2D\u89E6\u78B0\u5EF6\u65F6\u6C99\u6F0F\u65F6\uFF0C\u6709 8% \u6982\u7387\u51FA\u73B0\u4E00\u4E2A\u843D\u8DD1\u821E\u5A18": {
+      en: "In Netherrealm stages, when touching a Time Extension Hourglass in Clockwork Ballet Games, there is an 8% chance for a Runaway Dancer to appear"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5728\u4FF1\u4E50\u90E8\u6E38\u620F\u4E2D\u51FB\u8D25\u602A\u7269\u83B7\u5F97\u7684\u8BC4\u7EA7\u8FDB\u5EA6 +5%": {
+      en: "In Netherrealm stages, rating progress gained from defeating monsters in Clockwork Ballet Games +5%"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u589E\u63F4\u90E8\u961F\u51FA\u73B0\u7684\u602A\u7269\u66F4\u53EF\u80FD\u662F\u7A00\u6709\u602A\u7269": {
+      en: "In Netherrealm stages, monsters appearing in Reinforcement Troops are more likely to be Rare monsters"
+    },
+    "\u5F02\u754C\u5173\u5361\u4E2D\uFF0C\u5F81\u6218\u4E4B\u795E\u6248\u4ECE\u88AB\u51FB\u8D25\u65F6\u6709 0.03% \u6982\u7387\u5728\u9996\u9886\u533A\u57DF\u989D\u5916\u751F\u6210 1 \u4E2A\u4FE1\u6807\u5B9D\u7BB1": {
+      en: "In Netherrealm stages, when God of War Retinue is defeated, there is a 0.03% chance to spawn 1 additional Beacon Chest in the boss area"
+    },
+    "\u611A\u949D-\u673A\u68B0": {
+      en: "Dull - Machine"
+    },
+    "\u6028\u6068-\u9ED1\u6F6E": {
+      en: "Resentful - Dark Surge"
+    },
+    "\u9707\u6012-\u5DE8\u529B": {
+      en: "Enraged - Might"
+    },
+    "\u4E13\u6A2A-\u901A\u7F09": {
+      en: "Imperious - Outlaw"
+    }
+  };
+
   // src/ui-translations.ts
   var patchNotes = {
     "\u66F4\u65B0\u65E5\u5FD7": {
@@ -16788,14 +18121,63 @@
       en: "S11 SC"
     }
   };
-  var uiTranslations = {
-    // Brute force
+  var tempBruteForceTranslations = {
+    "\u7B491\u79CD": {
+      en: "+1"
+    },
+    "\u7B492\u79CD": {
+      en: "+2"
+    },
+    "\u7B493\u79CD": {
+      en: "+3"
+    },
+    "\u7B494\u79CD": {
+      en: "+4"
+    },
+    "\u7B495\u79CD": {
+      en: "+5"
+    },
+    "\u7B496\u79CD": {
+      en: "+6"
+    },
+    "\u7B497\u79CD": {
+      en: "+7"
+    },
     "\u7B498\u79CD": {
       en: "+8"
+    },
+    "\u7B499\u79CD": {
+      en: "+9"
+    },
+    "\u7B491\u4E2A": {
+      en: "+1"
+    },
+    "\u7B492\u4E2A": {
+      en: "+2"
     },
     "\u7B493\u4E2A": {
       en: "+3"
     },
+    "\u7B494\u4E2A": {
+      en: "+4"
+    },
+    "\u7B495\u4E2A": {
+      en: "+5"
+    },
+    "\u7B496\u4E2A": {
+      en: "+6"
+    },
+    "\u7B497\u4E2A": {
+      en: "+7"
+    },
+    "\u7B498\u4E2A": {
+      en: "+8"
+    },
+    "\u7B499\u4E2A": {
+      en: "+9"
+    }
+  };
+  var uiTranslations = {
     "\u4E07\u754C": {
       en: "Rift of Dimensions"
     },
@@ -17859,7 +19241,7 @@
   };
   var buildLangMap = (lang) => {
     const result = {};
-    for (const [key, value] of Object.entries({ ...characterClassTranslations, ...notificationPetTranslations, ...patchNotes, ...seasonTranslations, ...uiTranslations })) {
+    for (const [key, value] of Object.entries({ ...atlasTalentTranslations, ...tempBruteForceTranslations, ...characterClassTranslations, ...notificationPetTranslations, ...patchNotes, ...seasonTranslations, ...uiTranslations })) {
       result[key] = value[lang] ?? value.en;
     }
     return result;
