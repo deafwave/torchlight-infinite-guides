@@ -11,7 +11,7 @@
 2. Download and unzip the latest release.
 3. Run the executable.
 
-Builds are automated via [Immutable GitHub Actions](https://github.com/ChandlerFerry/etor-translations/actions) for security.
+Releases are immutable, and automated via [GitHub Actions](https://github.com/ChandlerFerry/etor-translations/actions) for security.
 
 ### Method 2: Manual (No Security Patch)
 This method requires you to have the [original ETOR application](./docs/etor-faq.MD#where-can-i-download-the-original-etor).
