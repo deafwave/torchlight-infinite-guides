@@ -68,7 +68,7 @@ jobs:
 
       - name: Create GitHub Release
         if: steps.commit.outputs.committed == 'true'
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.version.outputs.new_version }}
           name: Release v${{ steps.version.outputs.new_version }}
@@ -81,5 +81,5 @@ jobs:
             build/etor-japanese.zip
             build/etor-korean.zip
             build/etor-russian.zip
-          draft: false
+          draft: true
           prerelease: false
