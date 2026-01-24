@@ -18181,6 +18181,9 @@
     "\u641C\u7D22\u7269\u54C1\u540D\u79F0": {
       en: "Search item name(CN)"
     },
+    "\u6E34\u763E\u75C7": {
+      en: "Vorax Theater"
+    },
     "\u6700\u4F4E\u4EF7\u683C": {
       en: "Min Price"
     },
@@ -18574,6 +18577,9 @@
     },
     "\u663E\u793A\u8BBE\u7F6E": {
       en: "Display Settings"
+    },
+    "\u6BDB\u5229": {
+      en: "Before Tax"
     },
     "\u6263\u7A0E\u663E\u793A": {
       en: "After Tax"
