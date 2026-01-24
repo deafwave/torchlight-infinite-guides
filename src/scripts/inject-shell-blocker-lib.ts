@@ -8,6 +8,7 @@
 
 import { existsSync, readFileSync, writeFileSync, copyFileSync } from 'fs';
 
+// TODO: Study what commands are actually needed and tighten this list further.
 const SAFE_COMMANDS_REGEX = String.raw`/^(ls|dir|echo|whoami|hostname|pwd|cd|type|cat|wmic\s+(os|cpu)|systeminfo|ver|date|time|chcp|tasklist|powershell\s+-Command\s+"\(Get-Process\s+-Id\s+\d+\)\.Path")/i`;
 
 const PATTERN = /'runShellCommand':([_a-zA-Z0-9$]+)=>\{?[^}]*ipcRenderer\[([^\]]+)\]\('run-shell-command',[^)]+\)\}?/;

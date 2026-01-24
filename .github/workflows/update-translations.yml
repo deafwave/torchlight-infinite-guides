@@ -6,7 +6,7 @@ on:
     - cron: '0 0 * * *'
   push:
     paths:
-      - 'src/ui-translations.ts'
+      - 'src/**'
 
 concurrency:
   group: ${{ github.repository }}-update-translations
@@ -86,5 +86,7 @@ jobs:
           prerelease: false
 
       - uses: eregon/publish-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           release_id: ${{ steps.create_release.outputs.id }}

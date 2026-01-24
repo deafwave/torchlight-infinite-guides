@@ -147,7 +147,7 @@ const seasonTranslations: Translations = {
     }
 }
 
-// TODO: Brute force - replace this with regex
+// Brute force | TODO:  replace this with regex
 const tempBruteForceTranslations: Translations = {
     "等1种": {
         en: "+1"
@@ -1021,7 +1021,7 @@ const uiTranslations: Translations = {
         en: "Kismet"
     },
     "未知": {
-        en: "Unknown|||"
+        en: "Unknown"
     },
     "设置": {
         en: "Settings"
