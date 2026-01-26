@@ -18202,6 +18202,9 @@
     }
   };
   var uiTranslations = {
+    "\u52C7\u8005\u4E4B\u8DEF": {
+      en: "Proof of the Brave"
+    },
     "\u5DE8\u529B": {
       en: "Might"
     },
@@ -18700,6 +18703,7 @@
     },
     "\u672A\u77E5\u60CA\u559C": {
       en: "Unknown Loot"
+      // Might be `Unidentified
     },
     "\u6211\u5148\u5B89\u9759": {
       en: "Sleep for"
@@ -19045,6 +19049,7 @@
     },
     "\u672A\u77E5": {
       en: "Unknown"
+      // Might be `Unidentified
     },
     "\u8BBE\u7F6E": {
       en: "Settings"
