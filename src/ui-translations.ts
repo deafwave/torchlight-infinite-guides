@@ -699,6 +699,9 @@ const uiTranslations: Translations = {
     "知识之神": {
         en: "Goddess of Knowledge"
     },
+    "只看自己": {
+        en: "Filter by Self"
+    },
     "原初之核": {
         en: "Traveler Entry"
     },
