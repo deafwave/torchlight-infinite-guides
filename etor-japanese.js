@@ -18671,6 +18671,9 @@
     "\u77E5\u8BC6\u4E4B\u795E": {
       en: "Goddess of Knowledge"
     },
+    "\u53EA\u770B\u81EA\u5DF1": {
+      en: "Filter by Self"
+    },
     "\u539F\u521D\u4E4B\u6838": {
       en: "Traveler Entry"
     },
