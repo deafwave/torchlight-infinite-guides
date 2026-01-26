@@ -18702,8 +18702,7 @@
       en: "Current Efficiency:"
     },
     "\u672A\u77E5\u60CA\u559C": {
-      en: "Unknown Loot"
-      // Might be `Unidentified
+      en: "Unidentified Items"
     },
     "\u6211\u5148\u5B89\u9759": {
       en: "Sleep for"
@@ -19048,8 +19047,7 @@
       en: "Kismet"
     },
     "\u672A\u77E5": {
-      en: "Unknown"
-      // Might be `Unidentified
+      en: "Unidentified"
     },
     "\u8BBE\u7F6E": {
       en: "Settings"
