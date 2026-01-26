@@ -229,6 +229,9 @@ const tempBruteForceTranslations: Translations = {
     },
 }
 const uiTranslations: Translations = {
+    "勇者之路": {
+        en: "Proof of the Brave"
+    },
     "巨力": {
         en: "Might"
     },
@@ -727,7 +730,7 @@ const uiTranslations: Translations = {
         en: "Current Efficiency:"
     },
     "未知惊喜": {
-        en: "Unknown Loot"
+        en: "Unknown Loot" // Might be `Unidentified
     },
     "我先安静": {
         en: "Sleep for"
@@ -1072,7 +1075,7 @@ const uiTranslations: Translations = {
         en: "Kismet"
     },
     "未知": {
-        en: "Unknown"
+        en: "Unknown" // Might be `Unidentified
     },
     "设置": {
         en: "Settings"

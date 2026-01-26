@@ -332,9 +332,11 @@ BB2: sGjhvfUhEfCK2AAAAAAA1A==
 BB3: AY5qxvXqEfCsnQAAAAAAmA== 
 BB4: t0tjYPZ+EfCLrwAAAAAAog== 
 
+
 ### Armour
-Armour1: PjKttveyEfCjZAAAAAAAgw== 
+Armour1: PjKttveyEfCjZAAAAAAAgw==
 Armour2: 62BRUfiCEfC9fgAAAAAASA==
+Armour3: naEm6PpTEfCpbAAAAAAAjg==
 
 ## End Notes - Vorax
 Look into for early Vorax
